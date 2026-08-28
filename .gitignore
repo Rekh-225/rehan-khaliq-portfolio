@@ -1,0 +1,12 @@
+# GitHub Pages publishes only the public site in /docs.
+/certificates/
+/profile-picture/
+/index.html
+/styles.css
+/script.js
+/Rehan_Khaliq_Portfolio_Content_Brief.md
+
+# Local-only files
+/tmp/
+.DS_Store
+Thumbs.db
