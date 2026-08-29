@@ -64,15 +64,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const filterButtons = document.querySelectorAll(".filter-btn");
   const projectCards = document.querySelectorAll(".project-card");
+  const projectsGrid = document.querySelector(".projects-grid");
 
   const applyProjectFilter = (filter) => {
+    let occupiedGridCells = 0;
+
     projectCards.forEach((card) => {
       const isMatch =
         filter === "all" ||
         (filter === "featured" && card.classList.contains("featured")) ||
         card.dataset.category === filter;
       card.style.display = isMatch ? "flex" : "none";
+
+      if (isMatch) {
+        occupiedGridCells += card.matches(":first-child") ? 2 : 1;
+      }
     });
+
+    projectsGrid?.classList.toggle("has-empty-cell", occupiedGridCells % 2 !== 0);
   };
 
   filterButtons.forEach((button) => {

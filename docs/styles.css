@@ -706,6 +706,14 @@ button:focus-visible {
   counter-reset: project;
 }
 
+/* Keep an incomplete final row open instead of rendering it as an empty card. */
+.projects-grid.has-empty-cell::after,
+.certs-grid:has(> .cert-card:nth-child(3):last-child)::after {
+  display: block;
+  background: var(--paper);
+  content: "";
+}
+
 .project-card {
   display: flex;
   flex-direction: column;
@@ -1300,6 +1308,11 @@ a.contact-card:hover .contact-icon {
   .education-grid,
   .certs-grid {
     grid-template-columns: 1fr;
+  }
+
+  .projects-grid.has-empty-cell::after,
+  .certs-grid:has(> .cert-card:nth-child(3):last-child)::after {
+    display: none;
   }
 
   .project-card:first-child {
