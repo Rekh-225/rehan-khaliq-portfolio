@@ -67,14 +67,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const applyProjectFilter = (filter) => {
     projectCards.forEach((card) => {
-      const isMatch = filter === "all" || card.dataset.category === filter;
+      const isMatch =
+        filter === "all" ||
+        (filter === "featured" && card.classList.contains("featured")) ||
+        card.dataset.category === filter;
       card.style.display = isMatch ? "flex" : "none";
     });
   };
 
   filterButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      const filter = button.dataset.filter ?? "all";
+      const filter = button.dataset.filter ?? "featured";
       filterButtons.forEach((candidate) => {
         const isActive = candidate === button;
         candidate.classList.toggle("active", isActive);
@@ -84,5 +87,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  applyProjectFilter("all");
+  applyProjectFilter("featured");
 });
