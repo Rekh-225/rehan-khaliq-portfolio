@@ -469,8 +469,7 @@ button:focus-visible {
 /* About */
 .about-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
-  gap: clamp(3.5rem, 10vw, 10rem);
+  grid-template-columns: minmax(0, 1fr);
   align-items: start;
 }
 
@@ -489,37 +488,6 @@ button:focus-visible {
 .highlight {
   color: var(--rust-dark);
   font-weight: 600;
-}
-
-.about-stats {
-  border-top: 1px solid var(--ink);
-}
-
-.stat-card {
-  display: grid;
-  grid-template-columns: 5.5rem 1fr;
-  align-items: baseline;
-  gap: 1rem;
-  padding: 1.1rem 0;
-  border-bottom: 1px solid var(--line-strong);
-}
-
-.stat-number {
-  color: var(--forest);
-  font-family: var(--serif);
-  font-size: clamp(2rem, 3vw, 2.8rem);
-  font-weight: 600;
-  letter-spacing: -0.065em;
-  line-height: 1;
-}
-
-.stat-label {
-  color: var(--ink-soft);
-  font-family: var(--mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.045em;
-  line-height: 1.4;
-  text-transform: uppercase;
 }
 
 /* Skills */
@@ -1345,7 +1313,6 @@ a.contact-card:hover .contact-icon {
 
 @media (max-width: 1000px) {
   .hero-container,
-  .about-grid,
   .contact-wrapper {
     grid-template-columns: minmax(0, 1fr) minmax(280px, 0.7fr);
     gap: clamp(2.5rem, 6vw, 5rem);
@@ -1432,7 +1399,6 @@ a.contact-card:hover .contact-icon {
   }
 
   .hero-container,
-  .about-grid,
   .contact-wrapper {
     grid-template-columns: 1fr;
   }
@@ -1457,10 +1423,6 @@ a.contact-card:hover .contact-icon {
 
   .section-header {
     margin-bottom: 2.8rem;
-  }
-
-  .about-stats {
-    max-width: 520px;
   }
 
   .project-domain-heading,
@@ -1550,10 +1512,6 @@ a.contact-card:hover .contact-icon {
 
   .btn {
     width: 100%;
-  }
-
-  .stat-card {
-    grid-template-columns: 4.65rem 1fr;
   }
 
   .skills-grid {
