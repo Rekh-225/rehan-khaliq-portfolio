@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rehan Khaliq — Computer Science Engineering student in Budapest. Applied work across AI/machine learning, backend engineering, cloud infrastructure, and cybersecurity.">
+    <meta name="description" content="Rehan Khaliq builds engineering systems with visible evidence: validation-only model decisions, deterministic network analysis, access controls, and documented operational safeguards.">
     <meta name="keywords" content="Rehan Khaliq, Portfolio, AI, Machine Learning, Backend Engineering, Cybersecurity, Cloud Infrastructure, Computer Science">
     <meta name="author" content="Rehan Khaliq">
     <meta property="og:title" content="Rehan Khaliq — Engineering Portfolio">
-    <meta property="og:description" content="Applied work across AI/machine learning, backend engineering, cloud infrastructure, and cybersecurity.">
+    <meta property="og:description" content="Engineering work grounded in validation, safeguards, and measurable outcomes across AI, software, cloud, and cybersecurity.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rekh-225.github.io/rehan-khaliq-portfolio/">
     <meta property="og:site_name" content="Rehan Khaliq — Engineering Portfolio">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Rehan Khaliq — Engineering Portfolio">
-    <meta name="twitter:description" content="Applied work across AI/machine learning, backend engineering, cloud infrastructure, and cybersecurity.">
+    <meta name="twitter:description" content="Engineering work grounded in validation, safeguards, and measurable outcomes across AI, software, cloud, and cybersecurity.">
     <link rel="canonical" href="https://rekh-225.github.io/rehan-khaliq-portfolio/">
     <title>Rehan Khaliq — Engineering Portfolio</title>
 
@@ -37,6 +37,7 @@
                 <a href="#projects" class="nav-link">Selected work</a>
                 <a href="#experience" class="nav-link">Experience</a>
                 <a href="#contact" class="nav-link">Contact</a>
+                <a href="assets/Rehan_Khaliq_Resume.pdf" class="nav-link nav-resume" download>Download Resume</a>
             </div>
 
             <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
@@ -58,9 +59,9 @@
                 <h1 class="hero-title reveal reveal-delay-1">
                     <span class="gradient-text">Rehan<br>Khaliq</span>
                 </h1>
-                <p class="hero-subtitle reveal reveal-delay-2">Building work that stands up to inspection.</p>
+                <p class="hero-subtitle reveal reveal-delay-2">Engineering systems with evidence, safeguards, and measurable outcomes.</p>
                 <p class="hero-description reveal reveal-delay-3">
-                    I work across AI/machine learning, backend engineering, cloud infrastructure and security — turning technical ideas into systems that are clear, testable and useful.
+                    In a fraud-detection pipeline, I chose the alert threshold on validation data only and reached 95.7% precision on an untouched test set. In a deep packet inspection engine, I used deterministic rule-based filtering and validated the tool with 90 automated tests.
                 </p>
                 <div class="hero-cta reveal reveal-delay-4">
                     <a href="#projects" class="btn btn-primary">Explore selected work</a>
@@ -102,9 +103,8 @@
             </div>
             <div class="about-grid">
                 <div class="about-text reveal reveal-left">
-                    <p>I am a <span class="highlight">Computer Science Engineering</span> student in Budapest with a <span class="highlight">4.74/5.0 GPA</span> and a <span class="highlight">Stipendium Hungaricum</span> scholarship. I build software that connects AI/machine learning, backend engineering, cloud infrastructure, and security.</p>
-                    <p>My projects include an explainable fraud-detection pipeline, a deep packet inspection engine, AI web applications, and a secure Azure-based development environment. I also mentor international students and turn technical work into clear documentation and useful tools.</p>
-                    <p>I believe in building systems people can trust — transparent, auditable, and well-documented.</p>
+                    <p>I am a <span class="highlight">Computer Science Engineering</span> student in Budapest with a <span class="highlight">4.74/5.0 GPA</span> and a <span class="highlight">Stipendium Hungaricum</span> scholarship. I build across AI, backend, cloud, and cybersecurity by making system behaviour and limits visible.</p>
+                    <p>That means validation-only fraud thresholds with exported audit evidence; an offline PCAP engine with deterministic filtering; and Azure-hosted services protected by network controls, SSH keys, TLS, monitoring, and nightly backups. The tabs below let you follow that approach through the domain most relevant to your role.</p>
                 </div>
                 <div class="about-stats reveal reveal-right">
                     <div class="stat-card">
@@ -112,16 +112,16 @@
                         <span class="stat-label">GPA / 5.0</span>
                     </div>
                     <div class="stat-card">
-                        <span class="stat-number">13</span>
-                        <span class="stat-label">Projects Featured</span>
+                        <span class="stat-number">95.7%</span>
+                        <span class="stat-label">Fraud Precision / Untouched Test Set</span>
                     </div>
                     <div class="stat-card">
-                        <span class="stat-number">3</span>
-                        <span class="stat-label">Contribution Roles</span>
+                        <span class="stat-number">90/90</span>
+                        <span class="stat-label">DPI Automated Tests Passed</span>
                     </div>
                     <div class="stat-card">
-                        <span class="stat-number">20+</span>
-                        <span class="stat-label">Students Mentored</span>
+                        <span class="stat-number">69</span>
+                        <span class="stat-label">Fraud Alerts / 56,746 Test Transactions</span>
                     </div>
                 </div>
             </div>
@@ -295,6 +295,245 @@
 
     <!-- ===================== PROJECTS SECTION ===================== -->
     <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">04 / Selected work</span>
+                <h2 class="section-title">Evidence-led work, viewed by domain.</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="project-filters reveal" role="tablist" aria-label="Filter case studies by domain">
+                <button class="filter-btn active" id="filter-ai" data-filter="ai" role="tab" aria-selected="true" aria-controls="panel-ai">AI &amp; Data</button>
+                <button class="filter-btn" id="filter-backend" data-filter="backend" role="tab" aria-selected="false" aria-controls="panel-backend">Backend &amp; Web</button>
+                <button class="filter-btn" id="filter-cloud" data-filter="cloud" role="tab" aria-selected="false" aria-controls="panel-cloud">Cloud &amp; Systems</button>
+                <button class="filter-btn" id="filter-security" data-filter="security" role="tab" aria-selected="false" aria-controls="panel-security">Cybersecurity</button>
+            </div>
+
+            <div class="project-panels">
+                <div class="project-panel" id="panel-ai" data-category="ai" role="tabpanel" aria-labelledby="filter-ai">
+                    <div class="project-domain-heading reveal">
+                        <span class="section-label">AI &amp; Data / Case studies</span>
+                        <p>Model evaluation, explainability, and AI features designed with visible assumptions and safeguards.</p>
+                    </div>
+                    <div class="case-studies-grid">
+                        <article class="case-study-card reveal">
+                            <div class="case-study-card-header"><span class="project-category-icon">01</span><span class="project-scope-label">Academic ML project</span></div>
+                            <div class="case-study-card-body">
+                                <h3 class="case-study-title">Explainable AI-Powered Fraud Detection</h3>
+                                <div class="project-tags"><span class="project-tag">Python</span><span class="project-tag">scikit-learn</span><span class="project-tag">Random Forest</span><span class="project-tag">Risk analytics</span></div>
+                                <dl class="case-study-details">
+                                    <div><dt>Problem / context</dt><dd>Only 492 of 284,807 source transactions were labelled fraud, so accuracy could exceed 99% while detecting none.</dd></div>
+                                    <div><dt>Contribution &amp; decision</dt><dd>I built the reproducible pipeline, compared three classifiers, and selected both the Random Forest model and its 0.6735 alert threshold using validation data only rather than tuning on the test set.</dd></div>
+                                    <div><dt>What was difficult</dt><dd>Extreme class imbalance made accuracy misleading. I used stratified splits and evaluated precision, recall, F1, Average Precision, ROC-AUC, alert volume, and false-positive metrics instead.</dd></div>
+                                    <div><dt>Outcome</dt><dd>On the untouched test set: 95.7% precision, 69.5% recall, 0.805 F1, and 0.965 ROC-AUC; 69 of 56,746 transactions were escalated, with 66 confirmed fraud cases and 3 false positives.</dd></div>
+                                </dl>
+                            </div>
+                            <div class="project-card-footer"><a href="https://github.com/Rekh-225/Explainable-Fraud-Detection-PISU-2026" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a></div>
+                        </article>
+
+                        <article class="case-study-card reveal">
+                            <div class="case-study-card-header"><span class="project-category-icon">02</span><span class="project-scope-label">Data science project</span></div>
+                            <div class="case-study-card-body">
+                                <h3 class="case-study-title">ISSP25 — AI Salary Prediction Dashboard</h3>
+                                <div class="project-tags"><span class="project-tag">Python</span><span class="project-tag">Random Forest</span><span class="project-tag">SHAP</span><span class="project-tag">Dash</span></div>
+                                <dl class="case-study-details">
+                                    <div><dt>Problem / context</dt><dd>The project examined cybersecurity salary patterns across experience, remote work, job titles, company size, and other available factors.</dd></div>
+                                    <div><dt>Contribution &amp; decision</dt><dd>I performed EDA, trained a Random Forest regressor, and added SHAP explanations plus a Dash interface so the model behaviour could be inspected alongside the prediction.</dd></div>
+                                    <div><dt>What was difficult</dt><dd>Salary prediction with the available features was limited: the model reached a modest R² of 0.3224. I documented that limitation and made the workflow and feature effects visible rather than overstating accuracy.</dd></div>
+                                    <div><dt>Outcome</dt><dd>The dashboard reports R² 0.3224, MAE $36,122, and RMSE $46,065, with an interactive Dash interface for presenting the analysis.</dd></div>
+                                </dl>
+                            </div>
+                            <div class="project-card-footer"><a href="https://github.com/Rekh-225/ISSP25-Project" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a></div>
+                        </article>
+
+                        <article class="case-study-card reveal">
+                            <div class="case-study-card-header"><span class="project-category-icon">03</span><span class="project-scope-label">AI web application</span></div>
+                            <div class="case-study-card-body">
+                                <h3 class="case-study-title">SkinSync — AI-Powered Skincare Platform</h3>
+                                <div class="project-tags"><span class="project-tag">React</span><span class="project-tag">TypeScript</span><span class="project-tag">Supabase</span><span class="project-tag">OpenRouter</span></div>
+                                <dl class="case-study-details">
+                                    <div><dt>Problem / context</dt><dd>Users need help understanding routines, ingredients, acne triggers, diet effects, and climate-specific recommendations without treating AI output as medical advice.</dd></div>
+                                    <div><dt>Contribution &amp; decision</dt><dd>I built the quiz-led React application and used Supabase Auth, PostgreSQL, Row Level Security, and Edge Functions for user-specific data and AI-backed features.</dd></div>
+                                    <div><dt>What was difficult</dt><dd>AI service calls can fail. I implemented fallback behaviour, input validation, and local caching so the experience retained useful responses when an AI call failed.</dd></div>
+                                    <div><dt>Outcome</dt><dd>Delivered four AI Edge Function areas—chatbot, routine generation, ingredient analysis, and article fetching—within an authenticated flow with profile records and role assignment.</dd></div>
+                                </dl>
+                            </div>
+                            <div class="project-card-footer"><a href="https://github.com/Rekh-225/skinsync-ai-glow" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a></div>
+                        </article>
+                    </div>
+                    <div class="more-projects reveal">
+                        <div class="more-projects-heading"><span class="section-label">More projects</span><p>Shorter evidence trails and research work.</p></div>
+                        <div class="more-projects-list">
+                            <article class="more-project-card"><div><h4>Naibour</h4><p>Gemini-assisted semantic matching and graph-based trade rings for 2–4 participants.</p></div><a href="https://github.com/Rekh-225/naibour" target="_blank" rel="noopener noreferrer" class="project-link">GitHub</a></article>
+                            <article class="more-project-card private-project"><div><h4>Campus Copilot</h4><p>Private RAG research design using hybrid retrieval, cited answers, RBAC, PII scanning, and pseudonymised logging. Before featuring it, add a public one-page architecture brief or redacted diagram.</p></div><span class="project-link-private">Private research materials</span></article>
+                            <article class="more-project-card private-project"><div><h4>Comparative AI Predictive Analytics</h4><p>Private 16-slide group research presentation comparing healthcare, retail/e-commerce, and manufacturing. A public one-page summary would be suitable evidence.</p></div><span class="project-link-private">Private presentation</span></article>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-panel" id="panel-backend" data-category="backend" role="tabpanel" aria-labelledby="filter-backend" hidden>
+                    <div class="project-domain-heading reveal"><span class="section-label">Backend &amp; Web / Case studies</span><p>Application boundaries, persistent data, validation, and maintainable handover documentation.</p></div>
+                    <div class="case-studies-grid">
+                        <article class="case-study-card reveal">
+                            <div class="case-study-card-header"><span class="project-category-icon">01</span><span class="project-scope-label">C# / .NET coursework</span></div>
+                            <div class="case-study-card-body">
+                                <h3 class="case-study-title">Hackathon Results Management System</h3>
+                                <div class="project-tags"><span class="project-tag">C#</span><span class="project-tag">.NET 9</span><span class="project-tag">EF Core</span><span class="project-tag">SQLite</span></div>
+                                <dl class="case-study-details">
+                                    <div><dt>Problem / context</dt><dd>The application had to move hackathon records from XML through validation and persistence into queryable JSON reporting.</dd></div>
+                                    <div><dt>Contribution &amp; decision</dt><dd>I separated console/presentation code from data and business layers, then used EF Core Code-First migrations and SQLite to make the import and reporting workflow repeatable.</dd></div>
+                                    <div><dt>What was difficult</dt><dd>Bad XML fields could pollute later reporting. I added field validation, skip logic for invalid records, and upsert behaviour for existing records before query execution.</dd></div>
+                                    <div><dt>Outcome</dt><dd>Implemented 15 LINQ queries—5 simple, 5 medium, and 5 complex—and JSON exports generated per query.</dd></div>
+                                </dl>
+                            </div>
+                            <div class="project-card-footer"><a href="https://github.com/Rekh-225/HackathonResultsManagementSystem" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a></div>
+                        </article>
+
+                        <article class="case-study-card reveal">
+                            <div class="case-study-card-header"><span class="project-category-icon">02</span><span class="project-scope-label">Full-stack coursework</span></div>
+                            <div class="case-study-card-body">
+                                <h3 class="case-study-title">UserHub — User Management System</h3>
+                                <div class="project-tags"><span class="project-tag">ASP.NET Core 9</span><span class="project-tag">EF Core</span><span class="project-tag">SQLite</span><span class="project-tag">JavaScript</span></div>
+                                <dl class="case-study-details">
+                                    <div><dt>Problem / context</dt><dd>The project needed a complete CRUD application: a responsive interface, an API, validated persistence, search, sorting, and user-facing feedback.</dd></div>
+                                    <div><dt>Contribution &amp; decision</dt><dd>I built the ASP.NET Core API and custom SPA frontend, using EF Core migrations and a local SQLite database for a reproducible demo setup.</dd></div>
+                                    <div><dt>What was difficult</dt><dd>Client-side validation alone can be bypassed. I added server-side required-field and email validation plus server-enforced email uniqueness.</dd></div>
+                                    <div><dt>Outcome</dt><dd>Delivered 5 CRUD API endpoints, 5 seeded demo users, dual table/card views, and client- and server-side validation.</dd></div>
+                                </dl>
+                            </div>
+                            <div class="project-card-footer"><a href="https://github.com/Rekh-225/UserHub" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a></div>
+                        </article>
+
+                        <article class="case-study-card reveal">
+                            <div class="case-study-card-header"><span class="project-category-icon">03</span><span class="project-scope-label">Full-stack AI application</span></div>
+                            <div class="case-study-card-body">
+                                <h3 class="case-study-title">SkinSync — AI-Powered Skincare Platform</h3>
+                                <div class="project-tags"><span class="project-tag">React</span><span class="project-tag">Supabase</span><span class="project-tag">PostgreSQL</span><span class="project-tag">Edge Functions</span></div>
+                                <dl class="case-study-details">
+                                    <div><dt>Problem / context</dt><dd>SkinSync brings personalised routines, ingredient analysis, and chatbot guidance into an authenticated educational web application.</dd></div>
+                                    <div><dt>Contribution &amp; decision</dt><dd>I designed modular React pages and used Supabase Auth, PostgreSQL, Row Level Security, and Edge Functions to separate user data and AI service calls from the frontend.</dd></div>
+                                    <div><dt>What was difficult</dt><dd>AI calls can fail at runtime. I handled that constraint with fallback routines, validation, and local caching rather than leaving the flow empty.</dd></div>
+                                    <div><dt>Outcome</dt><dd>Implemented routine generation, chatbot guidance, ingredient analysis, and article fetching, with profile records and role assignment for authenticated users.</dd></div>
+                                </dl>
+                            </div>
+                            <div class="project-card-footer"><a href="https://github.com/Rekh-225/skinsync-ai-glow" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a></div>
+                        </article>
+                    </div>
+                    <div class="more-projects reveal">
+                        <div class="more-projects-heading"><span class="section-label">More projects</span><p>Additional web, systems, and team work.</p></div>
+                        <div class="more-projects-list">
+                            <article class="more-project-card"><div><h4>Naibour</h4><p>Next.js marketplace with Gemini-assisted matching, API routes, and graph-based trade-ring discovery.</p></div><a href="https://github.com/Rekh-225/naibour" target="_blank" rel="noopener noreferrer" class="project-link">GitHub</a></article>
+                            <article class="more-project-card"><div><h4>bitWiser</h4><p>C# gRPC firefighting simulation with role-based agent coordination, A* pathfinding, and a live dashboard.</p></div><a href="https://github.com/Rekh-225/bitWiser" target="_blank" rel="noopener noreferrer" class="project-link">GitHub</a></article>
+                            <article class="more-project-card private-project"><div><h4>AlertNAS</h4><p>Private 24-hour hackathon cloud platform integrating six public data-source categories. Before featuring it, add a redacted architecture one-pager or demo screenshot.</p></div><span class="project-link-private">No public repository</span></article>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-panel" id="panel-cloud" data-category="cloud" role="tabpanel" aria-labelledby="filter-cloud" hidden>
+                    <div class="project-domain-heading reveal"><span class="section-label">Cloud &amp; Systems / Case studies</span><p>Practical infrastructure that pairs service delivery with access controls, monitoring, and recovery.</p></div>
+                    <div class="case-studies-grid case-studies-grid-two">
+                        <article class="case-study-card reveal">
+                            <div class="case-study-card-header"><span class="project-category-icon">01</span><span class="project-scope-label">Infrastructure project</span></div>
+                            <div class="case-study-card-body">
+                                <h3 class="case-study-title">DevLab — Self-Hosted Development Environment</h3>
+                                <div class="project-tags"><span class="project-tag">Azure</span><span class="project-tag">Ubuntu</span><span class="project-tag">Nginx</span><span class="project-tag">Bash</span></div>
+                                <dl class="case-study-details">
+                                    <div><dt>Problem / context</dt><dd>The project simulated a small software team that needed private source ownership, issue tracking, internal DNS, a website, and monitoring without external Git hosting.</dd></div>
+                                    <div><dt>Contribution &amp; decision</dt><dd>I configured the Azure Ubuntu environment and integrated Gitea, Nginx, Flask, dnsmasq, Netdata, UFW, and backup scripts. I chose Gitea over GitLab for VM resource efficiency.</dd></div>
+                                    <div><dt>What was difficult</dt><dd>The service stack needed controls at both cloud and host levels. I combined Azure NSG and UFW with SSH key-only access, TLS, role-based Git access, and disabled public registration.</dd></div>
+                                    <div><dt>Outcome</dt><dd>Delivered 7 role-based Gitea accounts, 2 organisations, 2 repositories, 8 tracked issues, and nightly Bash/rsync backups scheduled for 23:00.</dd></div>
+                                </dl>
+                            </div>
+                            <div class="project-card-footer"><a href="https://github.com/Rekh-225/devlab-development-environment" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a></div>
+                        </article>
+
+                        <article class="case-study-card reveal">
+                            <div class="case-study-card-header"><span class="project-category-icon">02</span><span class="project-scope-label">Systems programming</span></div>
+                            <div class="case-study-card-body">
+                                <h3 class="case-study-title">Deep Packet Inspection System</h3>
+                                <div class="project-tags"><span class="project-tag">Python</span><span class="project-tag">PCAP</span><span class="project-tag">Threading</span><span class="project-tag">CLI</span></div>
+                                <dl class="case-study-details">
+                                    <div><dt>Problem / context</dt><dd>The engine explores authorised offline PCAP classification and filtering from protocol metadata without decrypting TLS or performing live interception.</dd></div>
+                                    <div><dt>Contribution &amp; decision</dt><dd>I wrote binary parsers and metadata extractors, then designed single- and multi-threaded paths with a reader, load balancer, fast-path workers, and writer.</dd></div>
+                                    <div><dt>What was difficult</dt><dd>Parallel packet handling can break stateful flow tracking. I used five-tuple tracking and consistent hashing to preserve flow affinity across workers.</dd></div>
+                                    <div><dt>Outcome</dt><dd>The standard-library-only tool classifies 20+ applications and services and passed 90 automated tests at a 100% pass rate.</dd></div>
+                                </dl>
+                            </div>
+                            <div class="project-card-footer"><a href="https://github.com/Rekh-225/Deep-Packet-Inspection-System" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a></div>
+                        </article>
+                    </div>
+                    <div class="more-projects reveal">
+                        <div class="more-projects-heading"><span class="section-label">More projects</span><p>Cloud-adjacent prototypes and serverless delivery.</p></div>
+                        <div class="more-projects-list">
+                            <article class="more-project-card private-project"><div><h4>AlertNAS</h4><p>Private cloud-native early-warning prototype built with FastAPI, MySQL DBaaS, object storage, Docker Compose, and a React/Leaflet dashboard. A redacted architecture one-pager or demo screenshot is the safest public evidence.</p></div><span class="project-link-private">No public repository</span></article>
+                            <article class="more-project-card"><div><h4>SkinSync</h4><p>React/Supabase application using PostgreSQL, Edge Functions, authenticated user flows, and Row Level Security.</p></div><a href="https://github.com/Rekh-225/skinsync-ai-glow" target="_blank" rel="noopener noreferrer" class="project-link">GitHub</a></article>
+                            <article class="more-project-card"><div><h4>Naibour</h4><p>Next.js application with scheduled heartbeat matching, health checks, API routes, and optional PostgreSQL/Prisma support.</p></div><a href="https://github.com/Rekh-225/naibour" target="_blank" rel="noopener noreferrer" class="project-link">GitHub</a></article>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-panel" id="panel-security" data-category="security" role="tabpanel" aria-labelledby="filter-security" hidden>
+                    <div class="project-domain-heading reveal"><span class="section-label">Cybersecurity / Case studies</span><p>Authorised analysis, explicit operational trade-offs, and layered safeguards rather than security claims without evidence.</p></div>
+                    <div class="case-studies-grid">
+                        <article class="case-study-card reveal">
+                            <div class="case-study-card-header"><span class="project-category-icon">01</span><span class="project-scope-label">Security systems project</span></div>
+                            <div class="case-study-card-body">
+                                <h3 class="case-study-title">Deep Packet Inspection System</h3>
+                                <div class="project-tags"><span class="project-tag">Python</span><span class="project-tag">Network security</span><span class="project-tag">TLS SNI</span><span class="project-tag">PCAP</span></div>
+                                <dl class="case-study-details">
+                                    <div><dt>Problem / context</dt><dd>The system classifies authorised offline PCAP traffic from TLS SNI, HTTP Host, DNS, port, and IP metadata without decrypting encrypted payloads.</dd></div>
+                                    <div><dt>Contribution &amp; decision</dt><dd>I implemented parsers for Ethernet, IPv4, TCP, and UDP, metadata extraction, 20+ application rules, and filtering by IP, application, domain, or port.</dd></div>
+                                    <div><dt>What was difficult</dt><dd>Multi-threading must preserve stateful flows. I handled this with consistent five-tuple hashing so a flow retains affinity with one worker.</dd></div>
+                                    <div><dt>Outcome</dt><dd>The offline, standard-library-only engine supports 20+ classifications and passed 90 automated tests at a 100% pass rate.</dd></div>
+                                </dl>
+                            </div>
+                            <div class="project-card-footer"><a href="https://github.com/Rekh-225/Deep-Packet-Inspection-System" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a></div>
+                        </article>
+
+                        <article class="case-study-card reveal">
+                            <div class="case-study-card-header"><span class="project-category-icon">02</span><span class="project-scope-label">Risk analytics project</span></div>
+                            <div class="case-study-card-body">
+                                <h3 class="case-study-title">Explainable AI-Powered Fraud Detection</h3>
+                                <div class="project-tags"><span class="project-tag">Python</span><span class="project-tag">Model validation</span><span class="project-tag">Audit evidence</span><span class="project-tag">Human review</span></div>
+                                <dl class="case-study-details">
+                                    <div><dt>Problem / context</dt><dd>The project turns rare-event fraud probabilities into an alert policy while accounting for false positives, investigation workload, and transparent limitations.</dd></div>
+                                    <div><dt>Contribution &amp; decision</dt><dd>I kept train, validation, and test partitions isolated, selected the Random Forest and threshold on validation data, and exported JSON/CSV summaries, feature importance, and confusion matrices.</dd></div>
+                                    <div><dt>What was difficult</dt><dd>Validation recall fell from an at-least-80% target to 69.5% on the untouched test set. I retained that result and documented the need for revalidation and monitoring rather than hiding the degradation.</dd></div>
+                                    <div><dt>Outcome</dt><dd>Achieved 95.7% precision with 3 false positives across 56,746 test transactions; the policy escalated 69 alerts, including 66 confirmed fraud cases.</dd></div>
+                                </dl>
+                            </div>
+                            <div class="project-card-footer"><a href="https://github.com/Rekh-225/Explainable-Fraud-Detection-PISU-2026" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a></div>
+                        </article>
+
+                        <article class="case-study-card reveal">
+                            <div class="case-study-card-header"><span class="project-category-icon">03</span><span class="project-scope-label">Infrastructure project</span></div>
+                            <div class="case-study-card-body">
+                                <h3 class="case-study-title">DevLab — Self-Hosted Development Environment</h3>
+                                <div class="project-tags"><span class="project-tag">Azure NSG</span><span class="project-tag">UFW</span><span class="project-tag">SSH</span><span class="project-tag">TLS</span></div>
+                                <dl class="case-study-details">
+                                    <div><dt>Problem / context</dt><dd>A self-hosted development stack needed source control, issue tracking, web services, and client workflows without leaving access controls as an afterthought.</dd></div>
+                                    <div><dt>Contribution &amp; decision</dt><dd>I configured dual-layer Azure NSG and UFW rules, SSH key-only authentication, HTTPS/TLS, role-based Git access, and disabled public self-registration.</dd></div>
+                                    <div><dt>What was difficult</dt><dd>Protecting a multi-service VM required a defensible recovery path as well as perimeter rules. I automated nightly Bash/rsync backups and logged execution status.</dd></div>
+                                    <div><dt>Outcome</dt><dd>Delivered 7 role-based Gitea accounts and nightly 23:00 backups, backed by 40+ pages of repository documentation and screenshots.</dd></div>
+                                </dl>
+                            </div>
+                            <div class="project-card-footer"><a href="https://github.com/Rekh-225/devlab-development-environment" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a></div>
+                        </article>
+                    </div>
+                    <div class="more-projects reveal">
+                        <div class="more-projects-heading"><span class="section-label">More projects</span><p>Security-aware research and private evidence.</p></div>
+                        <div class="more-projects-list">
+                            <article class="more-project-card private-project"><div><h4>Campus Copilot</h4><p>Private university-assistant research design with PII scanning, prompt-injection blocking, pseudonymised logs, RBAC filtering, and human escalation. Add a redacted safeguards diagram before featuring it.</p></div><span class="project-link-private">Private research materials</span></article>
+                            <article class="more-project-card private-project"><div><h4>AlertNAS</h4><p>Private early-warning hackathon documentation with a future productionisation path covering authentication, monitoring, resilience, data contracts, and auditability.</p></div><span class="project-link-private">No public repository</span></article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legacy project cards retained temporarily for source-history comparison. -->
+    <section class="section legacy-projects" id="projects-archive" hidden aria-hidden="true">
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-label">04 / Selected work</span>
@@ -911,6 +1150,7 @@
                         <p class="cta-text">I'm always open to discussing new projects, research opportunities, and ways to collaborate.</p>
                         <div class="cta-buttons">
                             <a href="mailto:rehankhaliq028@gmail.com" class="btn btn-primary">Send an Email</a>
+                            <a href="assets/Rehan_Khaliq_Resume.pdf" class="btn btn-secondary" download>Download Resume</a>
                             <a href="#projects" class="btn btn-secondary">View Projects</a>
                         </div>
                     </div>

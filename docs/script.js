@@ -62,26 +62,15 @@ document.addEventListener("DOMContentLoaded", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
-  const filterButtons = document.querySelectorAll(".filter-btn");
-  const projectCards = document.querySelectorAll(".project-card");
-  const projectsGrid = document.querySelector(".projects-grid");
+  const projectFilters = document.querySelector("#projects .project-filters");
+  const filterButtons = projectFilters?.querySelectorAll(".filter-btn") ?? [];
+  const projectPanels = document.querySelectorAll("#projects .project-panel");
 
   const applyProjectFilter = (filter) => {
-    let occupiedGridCells = 0;
-
-    projectCards.forEach((card) => {
-      const isMatch =
-        filter === "all" ||
-        (filter === "featured" && card.classList.contains("featured")) ||
-        card.dataset.category === filter;
-      card.style.display = isMatch ? "flex" : "none";
-
-      if (isMatch) {
-        occupiedGridCells += card.matches(":first-child") ? 2 : 1;
-      }
+    projectPanels.forEach((panel) => {
+      const isMatch = panel.dataset.category === filter;
+      panel.hidden = !isMatch;
     });
-
-    projectsGrid?.classList.toggle("has-empty-cell", occupiedGridCells % 2 !== 0);
   };
 
   filterButtons.forEach((button) => {
@@ -90,11 +79,28 @@ document.addEventListener("DOMContentLoaded", () => {
       filterButtons.forEach((candidate) => {
         const isActive = candidate === button;
         candidate.classList.toggle("active", isActive);
-        candidate.setAttribute("aria-pressed", String(isActive));
+        candidate.setAttribute("aria-selected", String(isActive));
+        candidate.tabIndex = isActive ? 0 : -1;
       });
       applyProjectFilter(filter);
     });
   });
 
-  applyProjectFilter("featured");
+  projectFilters?.addEventListener("keydown", (event) => {
+    const keys = ["ArrowLeft", "ArrowRight", "Home", "End"];
+    if (!keys.includes(event.key)) return;
+
+    event.preventDefault();
+    const buttons = Array.from(filterButtons);
+    const currentIndex = buttons.indexOf(document.activeElement);
+    const nextIndex =
+      event.key === "Home" ? 0 :
+      event.key === "End" ? buttons.length - 1 :
+      (currentIndex + (event.key === "ArrowRight" ? 1 : -1) + buttons.length) % buttons.length;
+
+    buttons[nextIndex]?.focus();
+    buttons[nextIndex]?.click();
+  });
+
+  applyProjectFilter("ai");
 });
