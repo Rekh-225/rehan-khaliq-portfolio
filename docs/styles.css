@@ -213,21 +213,6 @@ button:focus-visible {
   transform-origin: left;
 }
 
-.nav-resume {
-  padding: 0.45rem 0.58rem;
-  border: 1px solid var(--rust);
-  color: var(--rust-dark);
-}
-
-.nav-resume::after {
-  display: none;
-}
-
-.nav-resume:hover {
-  background: var(--rust);
-  color: var(--white);
-}
-
 .hamburger {
   display: none;
   flex-direction: column;
@@ -1435,13 +1420,6 @@ a.contact-card:hover .contact-icon {
     border-top: 1px solid var(--line);
     color: var(--ink);
     font-size: 0.75rem;
-  }
-
-  .nav-resume {
-    border-right: 0;
-    border-bottom: 0;
-    border-left: 0;
-    color: var(--rust-dark);
   }
 
   .nav-link::after {
