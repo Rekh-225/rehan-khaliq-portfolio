@@ -1,1175 +1,366 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rehan Khaliq builds engineering systems with visible evidence: validation-only model decisions, deterministic network analysis, access controls, and documented operational safeguards.">
-    <meta name="keywords" content="Rehan Khaliq, Portfolio, AI, Machine Learning, Backend Engineering, Cybersecurity, Cloud Infrastructure, Computer Science">
+    <meta name="description" content="Computer Science Engineering student building practical AI and software systems, leading student communities, and documenting what he learns.">
+    <meta name="keywords" content="Rehan Khaliq, Computer Science Engineering, AI, software development, student leadership, portfolio">
     <meta name="author" content="Rehan Khaliq">
-    <meta property="og:title" content="Rehan Khaliq — Engineering Portfolio">
-    <meta property="og:description" content="Engineering work grounded in validation, safeguards, and measurable outcomes across AI, software, cloud, and cybersecurity.">
+    <meta property="og:title" content="Rehan Khaliq | AI and Software Developer, Community Leader">
+    <meta property="og:description" content="Computer Science Engineering student building practical AI and software systems, leading student communities, and documenting what he learns.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rekh-225.github.io/rehan-khaliq-portfolio/">
-    <meta property="og:site_name" content="Rehan Khaliq — Engineering Portfolio">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Rehan Khaliq — Engineering Portfolio">
-    <meta name="twitter:description" content="Engineering work grounded in validation, safeguards, and measurable outcomes across AI, software, cloud, and cybersecurity.">
+    <meta property="og:site_name" content="Rehan Khaliq Portfolio">
+    <meta property="og:image" content="https://rekh-225.github.io/rehan-khaliq-portfolio/profile-picture/resized_4x3.jpg">
+    <meta property="og:image:alt" content="Portrait of Rehan Khaliq">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rehan Khaliq | AI and Software Developer, Community Leader">
+    <meta name="twitter:description" content="Computer Science Engineering student building practical AI and software systems, leading student communities, and documenting what he learns.">
+    <meta name="twitter:image" content="https://rekh-225.github.io/rehan-khaliq-portfolio/profile-picture/resized_4x3.jpg">
+    <meta name="twitter:image:alt" content="Portrait of Rehan Khaliq">
     <link rel="canonical" href="https://rekh-225.github.io/rehan-khaliq-portfolio/">
-    <title>Rehan Khaliq — Engineering Portfolio</title>
-
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20260907-1">
+    <title>Rehan Khaliq | AI and Software Developer, Community Leader</title>
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <!-- ===================== NAVIGATION ===================== -->
-    <nav class="nav" id="navbar">
+    <nav class="nav" id="navbar" aria-label="Primary navigation">
         <div class="container nav-container">
-            <a href="#hero" class="nav-logo">RK<span class="gradient-text">/</span></a>
-
+            <a href="#hero" class="nav-logo" aria-label="Rehan Khaliq — back to top">RK<span>/</span></a>
             <div class="nav-links" id="navLinks">
-                <a href="#about" class="nav-link">Profile</a>
-                <a href="#projects" class="nav-link">Selected work</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#profile" class="nav-link" data-section-link>Profile</a>
+                <a href="#work" class="nav-link" data-section-link>Work</a>
+                <a href="#experience" class="nav-link" data-section-link>Experience</a>
+                <a href="#skills" class="nav-link" data-section-link>Skills</a>
+                <a href="#education" class="nav-link" data-section-link>Education</a>
+                <a href="#contact" class="nav-link" data-section-link>Contact</a>
             </div>
-
-            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="hamburger" id="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
             </button>
         </div>
     </nav>
 
-    <main id="content">
-    <!-- ===================== HERO SECTION ===================== -->
-    <section class="hero section" id="hero">
-        <div class="container hero-container">
-            <div class="hero-content">
-                <div class="hero-greeting reveal">
-                    <span>AI/machine learning · Backend engineering · Budapest</span>
-                </div>
-                <h1 class="hero-title reveal reveal-delay-1">
-                    <span class="gradient-text">Rehan<br>Khaliq</span>
-                </h1>
-                <p class="hero-subtitle reveal reveal-delay-2">Systems thinking across the full engineering stack.</p>
-                <p class="hero-description reveal reveal-delay-3">
-                    I work across AI, backend, cloud, and security with a systems mindset: treating data, software, infrastructure, and safeguards as parts of the same engineering problem. The case studies below show how that thinking becomes implementation.
-                </p>
-                <div class="hero-cta reveal reveal-delay-4">
-                    <a href="#projects" class="btn btn-primary">Explore selected work</a>
-                    <a href="#contact" class="btn btn-secondary">Start a conversation</a>
-                </div>
-                <div class="hero-social reveal reveal-delay-4">
-                    <a href="https://github.com/Rekh-225" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/khaliq-rehan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                    </a>
-                    <a href="mailto:rehankhaliq028@gmail.com" aria-label="Email" class="social-link">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                    </a>
-                </div>
-            </div>
-            <div class="hero-image-wrapper reveal-right">
-                <div class="hero-image-container">
-                    <img src="profile-picture/resized_4x3.jpg" alt="Rehan Khaliq — Computer Science Engineering Student" class="hero-image" loading="eager">
-                    <div class="hero-image-ring"></div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator" aria-hidden="true">
-            <div class="scroll-arrow">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===================== ABOUT SECTION ===================== -->
-    <section class="section section-alt" id="about">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">01 / Profile</span>
-                <h2 class="section-title">The work behind the page.</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="about-grid">
-                <div class="about-text reveal reveal-left">
-                    <p>I am a <span class="highlight">Computer Science Engineering</span> student in Budapest with a <span class="highlight">4.74/5.0 GPA</span> and a <span class="highlight">Stipendium Hungaricum</span> scholarship. I build across AI, backend, cloud, and cybersecurity by making system behaviour and limits visible.</p>
-                    <p>That means validation-only fraud thresholds with exported audit evidence; an offline PCAP engine with deterministic filtering; and Azure-hosted services protected by network controls, SSH keys, TLS, monitoring, and nightly backups. The tabs below let you follow that approach through the domain most relevant to your role.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===================== SKILLS SECTION ===================== -->
-    <section class="section" id="skills">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">02 / Toolkit</span>
-                <h2 class="section-title">Tools, methods &amp; platforms.</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="skills-grid">
-                <!-- Languages -->
-                <div class="skill-category reveal reveal-delay-1">
-                    <div class="skill-icon">⌨️</div>
-                    <h3 class="skill-category-title">Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">C#</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">Bash</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">HTML</span>
-                        <span class="skill-tag">CSS</span>
+    <main id="main-content">
+        <section class="hero" id="hero" aria-labelledby="hero-name">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <p class="hero-eyebrow">Computer Science Engineering Student · Building AI and Software Systems · Budapest</p>
+                    <h1 class="hero-name" id="hero-name">Rehan Khaliq</h1>
+                    <p class="hero-headline">I build practical systems and communities that help people learn, decide, and connect.</p>
+                    <p class="hero-description">I turn real problems into working prototypes, test the assumptions behind them, and document what I learn. Alongside AI and software projects, I lead student communities and mentor international students.</p>
+                    <div class="hero-actions">
+                        <a href="#work" class="btn btn-primary">View selected work</a>
+                    </div>
+                    <div class="social-links" aria-label="Social and contact links">
+                        <a href="https://github.com/Rekh-225" target="_blank" rel="noopener noreferrer" aria-label="Visit Rehan Khaliq's GitHub profile in a new tab">GitHub <span aria-hidden="true">↗</span></a>
+                        <a href="https://www.linkedin.com/in/khaliq-rehan" target="_blank" rel="noopener noreferrer" aria-label="Visit Rehan Khaliq's LinkedIn profile in a new tab">LinkedIn <span aria-hidden="true">↗</span></a>
+                        <a href="mailto:rehankhaliq028@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email Rehan Khaliq">Email <span aria-hidden="true">↗</span></a>
                     </div>
                 </div>
-
-                <!-- AI, Data & Research -->
-                <div class="skill-category reveal reveal-delay-2">
-                    <div class="skill-icon">🧠</div>
-                    <h3 class="skill-category-title">AI, Data & Research</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">pandas</span>
-                        <span class="skill-tag">NumPy</span>
-                        <span class="skill-tag">scikit-learn</span>
-                        <span class="skill-tag">SHAP</span>
-                        <span class="skill-tag">RAG Pipelines</span>
-                        <span class="skill-tag">LangChain</span>
-                        <span class="skill-tag">Qdrant</span>
-                        <span class="skill-tag">Gemini API</span>
-                        <span class="skill-tag">Prompt Engineering</span>
+                <figure class="portrait-frame">
+                    <div class="portrait-label" aria-hidden="true"><span>Portrait / 2026</span><span>Budapest, HU</span></div>
+                    <div class="portrait-image-wrap">
+                        <img src="profile-picture/resized_4x3.jpg" alt="Portrait of Rehan Khaliq, a Computer Science Engineering student based in Budapest" class="portrait-image" loading="eager" fetchpriority="high">
                     </div>
+                    <figcaption>Building through curiosity, testing, and reflection.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="profile" aria-labelledby="profile-title">
+            <div class="container">
+                <header class="section-header">
+                    <p class="section-label">01 / Profile</p>
+                    <h2 class="section-title" id="profile-title">How I build and learn.</h2>
+                </header>
+                <div class="profile-copy">
+                    <p>As a Computer Science Engineering student, I learn best by building around real constraints, testing where ideas fail, and explaining trade-offs clearly.</p>
+                    <p>My interests span AI, software, cloud, and security, but the common thread is practical problem solving. I focus on systems that help people find reliable information, make better decisions, or connect with one another. Outside engineering, I founded Pages &amp; People and mentor international students.</p>
                 </div>
-
-                <!-- Backend, Web & Databases -->
-                <div class="skill-category reveal reveal-delay-3">
-                    <div class="skill-icon">🔧</div>
-                    <h3 class="skill-category-title">Backend & Web</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">FastAPI</span>
-                        <span class="skill-tag">Flask</span>
-                        <span class="skill-tag">ASP.NET Core</span>
-                        <span class="skill-tag">.NET 9</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Next.js</span>
-                        <span class="skill-tag">Supabase</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">Prisma</span>
-                    </div>
-                </div>
-
-                <!-- Cloud, Systems & Security -->
-                <div class="skill-category reveal reveal-delay-1">
-                    <div class="skill-icon">🛡️</div>
-                    <h3 class="skill-category-title">Cloud & Security</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Azure</span>
-                        <span class="skill-tag">Docker Compose</span>
-                        <span class="skill-tag">Linux</span>
-                        <span class="skill-tag">Nginx</span>
-                        <span class="skill-tag">SSH / TLS</span>
-                        <span class="skill-tag">Hack The Box</span>
-                        <span class="skill-tag">Deep Packet Inspection</span>
-                        <span class="skill-tag">Common Criteria</span>
-                        <span class="skill-tag">IEC 62443</span>
-                    </div>
-                </div>
-
-                <!-- Tools & Automation -->
-                <div class="skill-category reveal reveal-delay-2">
-                    <div class="skill-icon">⚙️</div>
-                    <h3 class="skill-category-title">Tools & Automation</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Git & GitHub</span>
-                        <span class="skill-tag">Jupyter</span>
-                        <span class="skill-tag">LaTeX</span>
-                        <span class="skill-tag">Copilot</span>
-                        <span class="skill-tag">Make.com</span>
-                        <span class="skill-tag">n8n Basics</span>
-                        <span class="skill-tag">VS Code</span>
-                    </div>
-                </div>
-
-                <!-- Engineering Practices -->
-                <div class="skill-category reveal reveal-delay-3">
-                    <div class="skill-icon">📐</div>
-                    <h3 class="skill-category-title">Engineering Practices</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">OOP</span>
-                        <span class="skill-tag">Layered Architecture</span>
-                        <span class="skill-tag">Unit Testing Basics</span>
-                        <span class="skill-tag">Documentation-Driven Development</span>
-                        <span class="skill-tag">Agile-Style Planning</span>
-                        <span class="skill-tag">Research Synthesis</span>
-                    </div>
+                <div class="approach-block" aria-labelledby="approach-title">
+                    <h3 id="approach-title">Working approach</h3>
+                    <ol class="approach-grid">
+                        <li><span class="approach-number">01</span><strong>Understand the problem</strong><p>Learn who experiences it, what they need, and which constraints matter.</p></li>
+                        <li><span class="approach-number">02</span><strong>Build a focused version</strong><p>Create enough to test the central idea before expanding the scope.</p></li>
+                        <li><span class="approach-number">03</span><strong>Test assumptions</strong><p>Check edge cases, failures, usability, safety, and measurable results.</p></li>
+                        <li><span class="approach-number">04</span><strong>Document and improve</strong><p>Record decisions, limitations, feedback, and what should change next.</p></li>
+                    </ol>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ===================== EXPERIENCE SECTION ===================== -->
-    <section class="section section-alt" id="experience">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">03 / Experience</span>
-                <h2 class="section-title">Contributing through research and community.</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="timeline">
-                <!-- Research -->
-                <div class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Feb 2026 — May 2026</span>
-                        <h3 class="timeline-role">Research Contributor — RAG-Based University Assistant</h3>
-                        <span class="timeline-company">Óbuda University AI Squad</span>
-                        <ul class="timeline-details">
-                            <li>Co-designed a hybrid BM25 + dense-retrieval architecture using Qdrant and Reciprocal Rank Fusion.</li>
-                            <li>Defined PII scanning, prompt-injection detection, RBAC filtering, and pseudonymised logging.</li>
-                            <li>Co-authored a 21-page technical research report — earned an invitation to the AI Core research programme.</li>
-                        </ul>
-                    </div>
+        <section class="section" id="work" aria-labelledby="work-title">
+            <div class="container">
+                <header class="section-header section-header-wide">
+                    <p class="section-label">02 / Selected work</p>
+                    <h2 class="section-title" id="work-title">Problems I explored, systems I built, and lessons I carried forward.</h2>
+                </header>
+                <div class="project-filters" id="projectFilters" role="toolbar" aria-label="Filter projects by category">
+                    <button class="filter-btn active" type="button" data-filter="featured" aria-pressed="true">Featured</button>
+                    <button class="filter-btn" type="button" data-filter="ai-data" aria-pressed="false" tabindex="-1">AI and Data</button>
+                    <button class="filter-btn" type="button" data-filter="software-backend" aria-pressed="false" tabindex="-1">Software and Backend</button>
+                    <button class="filter-btn" type="button" data-filter="cloud-systems" aria-pressed="false" tabindex="-1">Cloud and Systems</button>
+                    <button class="filter-btn" type="button" data-filter="cybersecurity" aria-pressed="false" tabindex="-1">Cybersecurity</button>
+                    <button class="filter-btn" type="button" data-filter="all" aria-pressed="false" tabindex="-1">All Work</button>
                 </div>
+                <p class="filter-status sr-only" id="filterStatus" aria-live="polite"></p>
+                <noscript><p class="noscript-note">All projects are shown. Enable JavaScript to filter the collection.</p></noscript>
 
-                <!-- Mentoring -->
-                <div class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Jul 2025 — Present</span>
-                        <h3 class="timeline-role">Mentor — Stipendium Hungaricum Programme</h3>
-                        <span class="timeline-company">HÖOK & Óbuda University</span>
-                        <ul class="timeline-details">
-                            <li>Guided onboarding and academic administration for 20+ international students.</li>
-                            <li>Resolved administrative and academic IT roadblocks through structured troubleshooting.</li>
-                            <li>Documented recurring support issues to improve support procedures.</li>
-                        </ul>
+                <div class="project-group" id="featuredWorkGroup">
+                    <div class="group-heading">
+                        <h3>Featured case studies</h3>
+                        <p>Four projects examined through the problem, contribution, decision, learning, and result.</p>
                     </div>
-                </div>
-
-                <!-- Community leadership -->
-                <div class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Nov 2025 — Present</span>
-                        <h3 class="timeline-role">Co-organiser — Pages & People Book Community</h3>
-                        <span class="timeline-company">Óbuda University</span>
-                        <ul class="timeline-details">
-                            <li>Organised monthly book discussions, coordinated outreach and logistics — grew the community to 30+ active members.</li>
-                            <li>Produced SWOT analysis, stakeholder maps, risk logs, KPI evaluation, and post-event summaries.</li>
-                            <li>Received Best Student Project recognition in May 2026 and a feature in the freshman brochure.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===================== PROJECTS SECTION ===================== -->
-    <section class="section" id="projects">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">04 / Selected work</span>
-                <h2 class="section-title">Evidence-led work, viewed by domain.</h2>
-                <div class="section-line"></div>
-            </div>
-
-            <div class="project-filters reveal" role="tablist" aria-label="Filter case studies by domain">
-                <button class="filter-btn active" id="filter-ai" data-filter="ai" role="tab" aria-selected="true" aria-controls="panel-ai">AI &amp; Data</button>
-                <button class="filter-btn" id="filter-backend" data-filter="backend" role="tab" aria-selected="false" aria-controls="panel-backend">Backend &amp; Web</button>
-                <button class="filter-btn" id="filter-cloud" data-filter="cloud" role="tab" aria-selected="false" aria-controls="panel-cloud">Cloud &amp; Systems</button>
-                <button class="filter-btn" id="filter-security" data-filter="security" role="tab" aria-selected="false" aria-controls="panel-security">Cybersecurity</button>
-            </div>
-
-            <div class="project-panels">
-                <div class="project-panel" id="panel-ai" data-category="ai" role="tabpanel" aria-labelledby="filter-ai">
-                    <div class="project-domain-heading reveal">
-                        <span class="section-label">AI &amp; Data / Case studies</span>
-                        <p>Model evaluation, explainability, and AI features designed with visible assumptions and safeguards.</p>
-                    </div>
-                    <div class="case-studies-grid">
-                        <article class="case-study-card reveal">
-                            <div class="case-study-card-header"><span class="project-category-icon">01</span><span class="project-scope-label">Academic ML project</span></div>
-                            <div class="case-study-card-body">
-                                <h3 class="case-study-title">Explainable AI-Powered Fraud Detection</h3>
-                                <div class="project-tags"><span class="project-tag">Python</span><span class="project-tag">scikit-learn</span><span class="project-tag">Random Forest</span><span class="project-tag">Risk analytics</span></div>
-                                <dl class="case-study-details">
-                                    <div><dt>Problem / context</dt><dd>Only 492 of 284,807 source transactions were labelled fraud, so accuracy could exceed 99% while detecting none.</dd></div>
-                                    <div><dt>Contribution &amp; decision</dt><dd>I built the reproducible pipeline, compared three classifiers, and selected both the Random Forest model and its 0.6735 alert threshold using validation data only rather than tuning on the test set.</dd></div>
-                                    <div><dt>What was difficult</dt><dd>Extreme class imbalance made accuracy misleading. I used stratified splits and evaluated precision, recall, F1, Average Precision, ROC-AUC, alert volume, and false-positive metrics instead.</dd></div>
-                                    <div><dt>Outcome</dt><dd>On the untouched test set: 95.7% precision, 69.5% recall, 0.805 F1, and 0.965 ROC-AUC; 69 of 56,746 transactions were escalated, with 66 confirmed fraud cases and 3 false positives.</dd></div>
-                                </dl>
-                            </div>
-                            <div class="project-card-footer"><a href="https://github.com/Rekh-225/Explainable-Fraud-Detection-PISU-2026" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a></div>
+                    <div class="featured-grid" id="featuredGrid">
+                        <article class="feature-card feature-card-lead" data-project-card data-group="featured" data-categories="featured ai-data">
+                            <div class="project-card-meta"><span class="project-number">01</span><span>Óbuda University AI Squad · Spring 2026</span></div>
+                            <h4>Campus Copilot</h4>
+                            <p class="project-subtitle">RAG-Based University Assistant</p>
+                            <dl class="case-details">
+                                <div><dt>Problem</dt><dd>University rules, courses, scholarships, and student services are spread across many documents, making reliable answers difficult to find.</dd></div>
+                                <div><dt>What I built</dt><dd>My team and I created an early Claude-powered proof of concept for a RAG university assistant that returns cited answers from institutional sources. I co-designed its hybrid keyword and semantic retrieval approach, privacy safeguards, and evaluation plan, then co-authored the 21-page report and presented it to a faculty jury.</dd></div>
+                                <div><dt>What I learned</dt><dd>Useful AI in higher education needs trusted sources, privacy controls, clear limitations, and human escalation.</dd></div>
+                                <div><dt>Result</dt><dd>The project reached the AI Squad finals.</dd></div>
+                            </dl>
+                            <div class="project-tags" aria-label="Technologies"><span>Claude</span><span>RAG</span><span>Qdrant</span><span>Responsible AI</span></div>
+                            <span class="evidence-label">Research project</span>
                         </article>
 
-                        <article class="case-study-card reveal">
-                            <div class="case-study-card-header"><span class="project-category-icon">02</span><span class="project-scope-label">Data science project</span></div>
-                            <div class="case-study-card-body">
-                                <h3 class="case-study-title">ISSP25 — AI Salary Prediction Dashboard</h3>
-                                <div class="project-tags"><span class="project-tag">Python</span><span class="project-tag">Random Forest</span><span class="project-tag">SHAP</span><span class="project-tag">Dash</span></div>
-                                <dl class="case-study-details">
-                                    <div><dt>Problem / context</dt><dd>The project examined cybersecurity salary patterns across experience, remote work, job titles, company size, and other available factors.</dd></div>
-                                    <div><dt>Contribution &amp; decision</dt><dd>I performed EDA, trained a Random Forest regressor, and added SHAP explanations plus a Dash interface so the model behaviour could be inspected alongside the prediction.</dd></div>
-                                    <div><dt>What was difficult</dt><dd>Salary prediction with the available features was limited: the model reached a modest R² of 0.3224. I documented that limitation and made the workflow and feature effects visible rather than overstating accuracy.</dd></div>
-                                    <div><dt>Outcome</dt><dd>The dashboard reports R² 0.3224, MAE $36,122, and RMSE $46,065, with an interactive Dash interface for presenting the analysis.</dd></div>
-                                </dl>
-                            </div>
-                            <div class="project-card-footer"><a href="https://github.com/Rekh-225/ISSP25-Project" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a></div>
+                        <article class="feature-card" data-project-card data-group="featured" data-categories="featured ai-data software-backend">
+                            <div class="project-card-meta"><span class="project-number">02</span><span>Agentic AI Hackathon · April 2026</span></div>
+                            <h4>Naibour</h4>
+                            <p class="project-subtitle">AI-Powered Community Exchange Platform</p>
+                            <dl class="case-details">
+                                <div><dt>Problem</dt><dd>People may have useful skills, goods, or services to exchange, but direct one-to-one matches are often difficult to find.</dd></div>
+                                <div><dt>What I built</dt><dd>I built an agentic AI platform for cashless community exchange using semantic matching, weighted compatibility scoring, and graph-based trade-ring detection for direct swaps and multi-party exchange cycles involving 2 to 4 participants.</dd></div>
+                                <div><dt>What I learned</dt><dd>A useful matching system needs transparent compatibility criteria and should look beyond obvious one-to-one matches.</dd></div>
+                                <div><dt>Result</dt><dd>Delivered a working hackathon prototype that identified both direct and multi-party exchange opportunities.</dd></div>
+                            </dl>
+                            <div class="project-tags" aria-label="Technologies"><span>Next.js</span><span>TypeScript</span><span>Gemini</span><span>Graph algorithms</span></div>
+                            <a class="evidence-link" href="https://github.com/Rekh-225/naibour" target="_blank" rel="noopener noreferrer" aria-label="View the Naibour project on GitHub in a new tab">View on GitHub <span aria-hidden="true">↗</span></a>
                         </article>
 
-                        <article class="case-study-card reveal">
-                            <div class="case-study-card-header"><span class="project-category-icon">03</span><span class="project-scope-label">AI web application</span></div>
-                            <div class="case-study-card-body">
-                                <h3 class="case-study-title">SkinSync — AI-Powered Skincare Platform</h3>
-                                <div class="project-tags"><span class="project-tag">React</span><span class="project-tag">TypeScript</span><span class="project-tag">Supabase</span><span class="project-tag">OpenRouter</span></div>
-                                <dl class="case-study-details">
-                                    <div><dt>Problem / context</dt><dd>Users need help understanding routines, ingredients, acne triggers, diet effects, and climate-specific recommendations without treating AI output as medical advice.</dd></div>
-                                    <div><dt>Contribution &amp; decision</dt><dd>I built the quiz-led React application and used Supabase Auth, PostgreSQL, Row Level Security, and Edge Functions for user-specific data and AI-backed features.</dd></div>
-                                    <div><dt>What was difficult</dt><dd>AI service calls can fail. I implemented fallback behaviour, input validation, and local caching so the experience retained useful responses when an AI call failed.</dd></div>
-                                    <div><dt>Outcome</dt><dd>Delivered four AI Edge Function areas—chatbot, routine generation, ingredient analysis, and article fetching—within an authenticated flow with profile records and role assignment.</dd></div>
-                                </dl>
-                            </div>
-                            <div class="project-card-footer"><a href="https://github.com/Rekh-225/skinsync-ai-glow" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a></div>
-                        </article>
-                    </div>
-                    <div class="more-projects reveal">
-                        <div class="more-projects-heading"><span class="section-label">More projects</span><p>Shorter evidence trails and research work.</p></div>
-                        <div class="more-projects-list">
-                            <article class="more-project-card"><div><h4>Naibour</h4><p>Gemini-assisted semantic matching and graph-based trade rings for 2–4 participants.</p></div><a href="https://github.com/Rekh-225/naibour" target="_blank" rel="noopener noreferrer" class="project-link">GitHub</a></article>
-                            <article class="more-project-card private-project"><div><h4>Campus Copilot</h4><p>Private RAG research design using hybrid retrieval, cited answers, RBAC, PII scanning, and pseudonymised logging. Before featuring it, add a public one-page architecture brief or redacted diagram.</p></div><span class="project-link-private">Private research materials</span></article>
-                            <article class="more-project-card private-project"><div><h4>Comparative AI Predictive Analytics</h4><p>Private 16-slide group research presentation comparing healthcare, retail/e-commerce, and manufacturing. A public one-page summary would be suitable evidence.</p></div><span class="project-link-private">Private presentation</span></article>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-panel" id="panel-backend" data-category="backend" role="tabpanel" aria-labelledby="filter-backend" hidden>
-                    <div class="project-domain-heading reveal"><span class="section-label">Backend &amp; Web / Case studies</span><p>Application boundaries, persistent data, validation, and maintainable handover documentation.</p></div>
-                    <div class="case-studies-grid">
-                        <article class="case-study-card reveal">
-                            <div class="case-study-card-header"><span class="project-category-icon">01</span><span class="project-scope-label">C# / .NET coursework</span></div>
-                            <div class="case-study-card-body">
-                                <h3 class="case-study-title">Hackathon Results Management System</h3>
-                                <div class="project-tags"><span class="project-tag">C#</span><span class="project-tag">.NET 9</span><span class="project-tag">EF Core</span><span class="project-tag">SQLite</span></div>
-                                <dl class="case-study-details">
-                                    <div><dt>Problem / context</dt><dd>The application had to move hackathon records from XML through validation and persistence into queryable JSON reporting.</dd></div>
-                                    <div><dt>Contribution &amp; decision</dt><dd>I separated console/presentation code from data and business layers, then used EF Core Code-First migrations and SQLite to make the import and reporting workflow repeatable.</dd></div>
-                                    <div><dt>What was difficult</dt><dd>Bad XML fields could pollute later reporting. I added field validation, skip logic for invalid records, and upsert behaviour for existing records before query execution.</dd></div>
-                                    <div><dt>Outcome</dt><dd>Implemented 15 LINQ queries—5 simple, 5 medium, and 5 complex—and JSON exports generated per query.</dd></div>
-                                </dl>
-                            </div>
-                            <div class="project-card-footer"><a href="https://github.com/Rekh-225/HackathonResultsManagementSystem" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a></div>
+                        <article class="feature-card" data-project-card data-group="featured" data-categories="featured ai-data cloud-systems">
+                            <div class="project-card-meta"><span class="project-number">03</span><span>Aruba Cloud Hackathon · September 2025</span></div>
+                            <h4>AlertNAS</h4>
+                            <p class="project-subtitle">AI-Assisted Early-Warning Platform</p>
+                            <dl class="case-details">
+                                <div><dt>Problem</dt><dd>Public risk data is scattered across different sources and is difficult to turn into clear local alerts.</dd></div>
+                                <div><dt>What I built</dt><dd>A live AI-assisted early-warning platform that combined six public-data categories to map risks and generate alerts for European communities.</dd></div>
+                                <div><dt>My role</dt><dd>In a three-person team, I developed backend and data-integration components, contributed to system architecture and technical documentation, and helped deliver the final presentation.</dd></div>
+                                <div><dt>What I learned</dt><dd>Under a 24-hour deadline, prioritising a clear user flow and reliable data integration mattered more than adding every possible feature.</dd></div>
+                                <div><dt>Result</dt><dd>The project earned third place at the Aruba Cloud Hackathon.</dd></div>
+                            </dl>
+                            <div class="project-tags" aria-label="Technologies"><span>FastAPI</span><span>Python</span><span>Public data</span><span>AI-assisted analytics</span></div>
+                            <span class="evidence-label">Hackathon project</span>
                         </article>
 
-                        <article class="case-study-card reveal">
-                            <div class="case-study-card-header"><span class="project-category-icon">02</span><span class="project-scope-label">Full-stack coursework</span></div>
-                            <div class="case-study-card-body">
-                                <h3 class="case-study-title">UserHub — User Management System</h3>
-                                <div class="project-tags"><span class="project-tag">ASP.NET Core 9</span><span class="project-tag">EF Core</span><span class="project-tag">SQLite</span><span class="project-tag">JavaScript</span></div>
-                                <dl class="case-study-details">
-                                    <div><dt>Problem / context</dt><dd>The project needed a complete CRUD application: a responsive interface, an API, validated persistence, search, sorting, and user-facing feedback.</dd></div>
-                                    <div><dt>Contribution &amp; decision</dt><dd>I built the ASP.NET Core API and custom SPA frontend, using EF Core migrations and a local SQLite database for a reproducible demo setup.</dd></div>
-                                    <div><dt>What was difficult</dt><dd>Client-side validation alone can be bypassed. I added server-side required-field and email validation plus server-enforced email uniqueness.</dd></div>
-                                    <div><dt>Outcome</dt><dd>Delivered 5 CRUD API endpoints, 5 seeded demo users, dual table/card views, and client- and server-side validation.</dd></div>
-                                </dl>
-                            </div>
-                            <div class="project-card-footer"><a href="https://github.com/Rekh-225/UserHub" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a></div>
-                        </article>
-
-                        <article class="case-study-card reveal">
-                            <div class="case-study-card-header"><span class="project-category-icon">03</span><span class="project-scope-label">Full-stack AI application</span></div>
-                            <div class="case-study-card-body">
-                                <h3 class="case-study-title">SkinSync — AI-Powered Skincare Platform</h3>
-                                <div class="project-tags"><span class="project-tag">React</span><span class="project-tag">Supabase</span><span class="project-tag">PostgreSQL</span><span class="project-tag">Edge Functions</span></div>
-                                <dl class="case-study-details">
-                                    <div><dt>Problem / context</dt><dd>SkinSync brings personalised routines, ingredient analysis, and chatbot guidance into an authenticated educational web application.</dd></div>
-                                    <div><dt>Contribution &amp; decision</dt><dd>I designed modular React pages and used Supabase Auth, PostgreSQL, Row Level Security, and Edge Functions to separate user data and AI service calls from the frontend.</dd></div>
-                                    <div><dt>What was difficult</dt><dd>AI calls can fail at runtime. I handled that constraint with fallback routines, validation, and local caching rather than leaving the flow empty.</dd></div>
-                                    <div><dt>Outcome</dt><dd>Implemented routine generation, chatbot guidance, ingredient analysis, and article fetching, with profile records and role assignment for authenticated users.</dd></div>
-                                </dl>
-                            </div>
-                            <div class="project-card-footer"><a href="https://github.com/Rekh-225/skinsync-ai-glow" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a></div>
+                        <article class="feature-card" data-project-card data-group="featured" data-categories="featured ai-data cybersecurity">
+                            <div class="project-card-meta"><span class="project-number">04</span><span>Applied machine learning project</span></div>
+                            <h4>Explainable AI-Powered Fraud Detection</h4>
+                            <dl class="case-details">
+                                <div><dt>Problem</dt><dd>Only 492 of 284,807 transactions were labelled as fraud, so a model could appear highly accurate while missing the cases that mattered.</dd></div>
+                                <div><dt>What I built</dt><dd>I built a reproducible fraud-detection pipeline that compared three classifiers, selected an alert threshold using validation data, evaluated operational metrics, explained model behaviour, and documented its limitations.</dd></div>
+                                <div><dt>What I learned</dt><dd>Accuracy is misleading for rare events. Model thresholds should reflect false positives, investigation workload, and the real cost of missed cases.</dd></div>
+                                <div><dt>Result</dt><dd>On the untouched test set, the selected model achieved 95.7% precision, 69.5% recall, 0.805 F1, and 0.965 ROC-AUC. It escalated 69 of 56,746 transactions, including 66 confirmed fraud cases and 3 false positives.</dd></div>
+                            </dl>
+                            <div class="project-tags" aria-label="Technologies"><span>Python</span><span>scikit-learn</span><span>Random Forest</span><span>SHAP</span></div>
+                            <a class="evidence-link" href="https://github.com/Rekh-225/Explainable-Fraud-Detection-PISU-2026" target="_blank" rel="noopener noreferrer" aria-label="View the fraud detection project on GitHub in a new tab">View on GitHub <span aria-hidden="true">↗</span></a>
                         </article>
                     </div>
-                    <div class="more-projects reveal">
-                        <div class="more-projects-heading"><span class="section-label">More projects</span><p>Additional web, systems, and team work.</p></div>
-                        <div class="more-projects-list">
-                            <article class="more-project-card"><div><h4>Naibour</h4><p>Next.js marketplace with Gemini-assisted matching, API routes, and graph-based trade-ring discovery.</p></div><a href="https://github.com/Rekh-225/naibour" target="_blank" rel="noopener noreferrer" class="project-link">GitHub</a></article>
-                            <article class="more-project-card"><div><h4>bitWiser</h4><p>C# gRPC firefighting simulation with role-based agent coordination, A* pathfinding, and a live dashboard.</p></div><a href="https://github.com/Rekh-225/bitWiser" target="_blank" rel="noopener noreferrer" class="project-link">GitHub</a></article>
-                            <article class="more-project-card private-project"><div><h4>AlertNAS</h4><p>Private 24-hour hackathon cloud platform integrating six public data-source categories. Before featuring it, add a redacted architecture one-pager or demo screenshot.</p></div><span class="project-link-private">No public repository</span></article>
-                        </div>
-                    </div>
                 </div>
 
-                <div class="project-panel" id="panel-cloud" data-category="cloud" role="tabpanel" aria-labelledby="filter-cloud" hidden>
-                    <div class="project-domain-heading reveal"><span class="section-label">Cloud &amp; Systems / Case studies</span><p>Practical infrastructure that pairs service delivery with access controls, monitoring, and recovery.</p></div>
-                    <div class="case-studies-grid case-studies-grid-two">
-                        <article class="case-study-card reveal">
-                            <div class="case-study-card-header"><span class="project-category-icon">01</span><span class="project-scope-label">Infrastructure project</span></div>
-                            <div class="case-study-card-body">
-                                <h3 class="case-study-title">DevLab — Self-Hosted Development Environment</h3>
-                                <div class="project-tags"><span class="project-tag">Azure</span><span class="project-tag">Ubuntu</span><span class="project-tag">Nginx</span><span class="project-tag">Bash</span></div>
-                                <dl class="case-study-details">
-                                    <div><dt>Problem / context</dt><dd>The project simulated a small software team that needed private source ownership, issue tracking, internal DNS, a website, and monitoring without external Git hosting.</dd></div>
-                                    <div><dt>Contribution &amp; decision</dt><dd>I configured the Azure Ubuntu environment and integrated Gitea, Nginx, Flask, dnsmasq, Netdata, UFW, and backup scripts. I chose Gitea over GitLab for VM resource efficiency.</dd></div>
-                                    <div><dt>What was difficult</dt><dd>The service stack needed controls at both cloud and host levels. I combined Azure NSG and UFW with SSH key-only access, TLS, role-based Git access, and disabled public registration.</dd></div>
-                                    <div><dt>Outcome</dt><dd>Delivered 7 role-based Gitea accounts, 2 organisations, 2 repositories, 8 tracked issues, and nightly Bash/rsync backups scheduled for 23:00.</dd></div>
-                                </dl>
-                            </div>
-                            <div class="project-card-footer"><a href="https://github.com/Rekh-225/devlab-development-environment" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a></div>
-                        </article>
-
-                        <article class="case-study-card reveal">
-                            <div class="case-study-card-header"><span class="project-category-icon">02</span><span class="project-scope-label">Systems programming</span></div>
-                            <div class="case-study-card-body">
-                                <h3 class="case-study-title">Deep Packet Inspection System</h3>
-                                <div class="project-tags"><span class="project-tag">Python</span><span class="project-tag">PCAP</span><span class="project-tag">Threading</span><span class="project-tag">CLI</span></div>
-                                <dl class="case-study-details">
-                                    <div><dt>Problem / context</dt><dd>The engine explores authorised offline PCAP classification and filtering from protocol metadata without decrypting TLS or performing live interception.</dd></div>
-                                    <div><dt>Contribution &amp; decision</dt><dd>I wrote binary parsers and metadata extractors, then designed single- and multi-threaded paths with a reader, load balancer, fast-path workers, and writer.</dd></div>
-                                    <div><dt>What was difficult</dt><dd>Parallel packet handling can break stateful flow tracking. I used five-tuple tracking and consistent hashing to preserve flow affinity across workers.</dd></div>
-                                    <div><dt>Outcome</dt><dd>The standard-library-only tool classifies 20+ applications and services and passed 90 automated tests at a 100% pass rate.</dd></div>
-                                </dl>
-                            </div>
-                            <div class="project-card-footer"><a href="https://github.com/Rekh-225/Deep-Packet-Inspection-System" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a></div>
-                        </article>
+                <div class="project-group more-work" id="moreWorkGroup">
+                    <div class="group-heading">
+                        <h3>More Work</h3>
+                        <p>Additional projects with public implementation evidence.</p>
                     </div>
-                    <div class="more-projects reveal">
-                        <div class="more-projects-heading"><span class="section-label">More projects</span><p>Cloud-adjacent prototypes and serverless delivery.</p></div>
-                        <div class="more-projects-list">
-                            <article class="more-project-card private-project"><div><h4>AlertNAS</h4><p>Private cloud-native early-warning prototype built with FastAPI, MySQL DBaaS, object storage, Docker Compose, and a React/Leaflet dashboard. A redacted architecture one-pager or demo screenshot is the safest public evidence.</p></div><span class="project-link-private">No public repository</span></article>
-                            <article class="more-project-card"><div><h4>SkinSync</h4><p>React/Supabase application using PostgreSQL, Edge Functions, authenticated user flows, and Row Level Security.</p></div><a href="https://github.com/Rekh-225/skinsync-ai-glow" target="_blank" rel="noopener noreferrer" class="project-link">GitHub</a></article>
-                            <article class="more-project-card"><div><h4>Naibour</h4><p>Next.js application with scheduled heartbeat matching, health checks, API routes, and optional PostgreSQL/Prisma support.</p></div><a href="https://github.com/Rekh-225/naibour" target="_blank" rel="noopener noreferrer" class="project-link">GitHub</a></article>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-panel" id="panel-security" data-category="security" role="tabpanel" aria-labelledby="filter-security" hidden>
-                    <div class="project-domain-heading reveal"><span class="section-label">Cybersecurity / Case studies</span><p>Authorised analysis, explicit operational trade-offs, and layered safeguards rather than security claims without evidence.</p></div>
-                    <div class="case-studies-grid">
-                        <article class="case-study-card reveal">
-                            <div class="case-study-card-header"><span class="project-category-icon">01</span><span class="project-scope-label">Security systems project</span></div>
-                            <div class="case-study-card-body">
-                                <h3 class="case-study-title">Deep Packet Inspection System</h3>
-                                <div class="project-tags"><span class="project-tag">Python</span><span class="project-tag">Network security</span><span class="project-tag">TLS SNI</span><span class="project-tag">PCAP</span></div>
-                                <dl class="case-study-details">
-                                    <div><dt>Problem / context</dt><dd>The system classifies authorised offline PCAP traffic from TLS SNI, HTTP Host, DNS, port, and IP metadata without decrypting encrypted payloads.</dd></div>
-                                    <div><dt>Contribution &amp; decision</dt><dd>I implemented parsers for Ethernet, IPv4, TCP, and UDP, metadata extraction, 20+ application rules, and filtering by IP, application, domain, or port.</dd></div>
-                                    <div><dt>What was difficult</dt><dd>Multi-threading must preserve stateful flows. I handled this with consistent five-tuple hashing so a flow retains affinity with one worker.</dd></div>
-                                    <div><dt>Outcome</dt><dd>The offline, standard-library-only engine supports 20+ classifications and passed 90 automated tests at a 100% pass rate.</dd></div>
-                                </dl>
-                            </div>
-                            <div class="project-card-footer"><a href="https://github.com/Rekh-225/Deep-Packet-Inspection-System" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a></div>
+                    <div class="more-work-grid" id="moreWorkGrid">
+                        <article class="compact-project" data-project-card data-group="more" data-categories="cloud-systems cybersecurity">
+                            <div class="project-card-meta"><span class="project-number">05</span><span>Cloud and Systems · Cybersecurity</span></div>
+                            <h4>Deep Packet Inspection System</h4>
+                            <p>Explores authorised offline PCAP classification and filtering without decrypting TLS or intercepting live traffic.</p>
+                            <p>I built binary protocol parsers, preserved flow affinity across workers, and validated the standard-library-only tool with 90 automated tests.</p>
+                            <div class="project-tags" aria-label="Technologies"><span>Python</span><span>PCAP</span><span>Networking</span><span>Threading</span></div>
+                            <a class="evidence-link" href="https://github.com/Rekh-225/Deep-Packet-Inspection-System" target="_blank" rel="noopener noreferrer" aria-label="View the Deep Packet Inspection System on GitHub in a new tab">View on GitHub <span aria-hidden="true">↗</span></a>
                         </article>
-
-                        <article class="case-study-card reveal">
-                            <div class="case-study-card-header"><span class="project-category-icon">02</span><span class="project-scope-label">Risk analytics project</span></div>
-                            <div class="case-study-card-body">
-                                <h3 class="case-study-title">Explainable AI-Powered Fraud Detection</h3>
-                                <div class="project-tags"><span class="project-tag">Python</span><span class="project-tag">Model validation</span><span class="project-tag">Audit evidence</span><span class="project-tag">Human review</span></div>
-                                <dl class="case-study-details">
-                                    <div><dt>Problem / context</dt><dd>The project turns rare-event fraud probabilities into an alert policy while accounting for false positives, investigation workload, and transparent limitations.</dd></div>
-                                    <div><dt>Contribution &amp; decision</dt><dd>I kept train, validation, and test partitions isolated, selected the Random Forest and threshold on validation data, and exported JSON/CSV summaries, feature importance, and confusion matrices.</dd></div>
-                                    <div><dt>What was difficult</dt><dd>Validation recall fell from an at-least-80% target to 69.5% on the untouched test set. I retained that result and documented the need for revalidation and monitoring rather than hiding the degradation.</dd></div>
-                                    <div><dt>Outcome</dt><dd>Achieved 95.7% precision with 3 false positives across 56,746 test transactions; the policy escalated 69 alerts, including 66 confirmed fraud cases.</dd></div>
-                                </dl>
-                            </div>
-                            <div class="project-card-footer"><a href="https://github.com/Rekh-225/Explainable-Fraud-Detection-PISU-2026" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a></div>
+                        <article class="compact-project" data-project-card data-group="more" data-categories="software-backend cloud-systems cybersecurity">
+                            <div class="project-card-meta"><span class="project-number">06</span><span>Software and Backend · Cloud and Systems</span></div>
+                            <h4>DevLab</h4>
+                            <p>Simulates a small team's need for private source control, issue tracking, internal DNS, web services, monitoring, and recovery.</p>
+                            <p>I configured the Azure Ubuntu environment, layered access controls, and automated nightly backups while documenting the operating decisions.</p>
+                            <div class="project-tags" aria-label="Technologies"><span>Azure</span><span>Linux</span><span>Nginx</span><span>Flask</span></div>
+                            <a class="evidence-link" href="https://github.com/Rekh-225/devlab-development-environment" target="_blank" rel="noopener noreferrer" aria-label="View DevLab on GitHub in a new tab">View on GitHub <span aria-hidden="true">↗</span></a>
                         </article>
-
-                        <article class="case-study-card reveal">
-                            <div class="case-study-card-header"><span class="project-category-icon">03</span><span class="project-scope-label">Infrastructure project</span></div>
-                            <div class="case-study-card-body">
-                                <h3 class="case-study-title">DevLab — Self-Hosted Development Environment</h3>
-                                <div class="project-tags"><span class="project-tag">Azure NSG</span><span class="project-tag">UFW</span><span class="project-tag">SSH</span><span class="project-tag">TLS</span></div>
-                                <dl class="case-study-details">
-                                    <div><dt>Problem / context</dt><dd>A self-hosted development stack needed source control, issue tracking, web services, and client workflows without leaving access controls as an afterthought.</dd></div>
-                                    <div><dt>Contribution &amp; decision</dt><dd>I configured dual-layer Azure NSG and UFW rules, SSH key-only authentication, HTTPS/TLS, role-based Git access, and disabled public self-registration.</dd></div>
-                                    <div><dt>What was difficult</dt><dd>Protecting a multi-service VM required a defensible recovery path as well as perimeter rules. I automated nightly Bash/rsync backups and logged execution status.</dd></div>
-                                    <div><dt>Outcome</dt><dd>Delivered 7 role-based Gitea accounts and nightly 23:00 backups, backed by 40+ pages of repository documentation and screenshots.</dd></div>
-                                </dl>
-                            </div>
-                            <div class="project-card-footer"><a href="https://github.com/Rekh-225/devlab-development-environment" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a></div>
+                        <article class="compact-project" data-project-card data-group="more" data-categories="ai-data software-backend">
+                            <div class="project-card-meta"><span class="project-number">07</span><span>AI and Data · Software and Backend</span></div>
+                            <h4>SkinSync</h4>
+                            <p>Helps people explore skincare routines, ingredients, and common triggers without presenting AI output as medical advice.</p>
+                            <p>I built the quiz-led application, authenticated data flows, and fallback behaviour for AI service failures.</p>
+                            <div class="project-tags" aria-label="Technologies"><span>React</span><span>TypeScript</span><span>Supabase</span><span>OpenRouter</span></div>
+                            <a class="evidence-link" href="https://github.com/Rekh-225/skinsync-ai-glow" target="_blank" rel="noopener noreferrer" aria-label="View SkinSync on GitHub in a new tab">View on GitHub <span aria-hidden="true">↗</span></a>
+                        </article>
+                        <article class="compact-project" data-project-card data-group="more" data-categories="software-backend">
+                            <div class="project-card-meta"><span class="project-number">08</span><span>Software and Backend</span></div>
+                            <h4>UserHub</h4>
+                            <p>Provides a complete user-management workflow with persistent records, search, sorting, validation, and clear feedback.</p>
+                            <p>I built the ASP.NET Core API and responsive interface, adding server-enforced email uniqueness and reproducible seed data.</p>
+                            <div class="project-tags" aria-label="Technologies"><span>ASP.NET Core</span><span>C#</span><span>EF Core</span><span>SQLite</span></div>
+                            <a class="evidence-link" href="https://github.com/Rekh-225/UserHub" target="_blank" rel="noopener noreferrer" aria-label="View UserHub on GitHub in a new tab">View on GitHub <span aria-hidden="true">↗</span></a>
+                        </article>
+                        <article class="compact-project" data-project-card data-group="more" data-categories="software-backend">
+                            <div class="project-card-meta"><span class="project-number">09</span><span>Software and Backend</span></div>
+                            <h4>Hackathon Results Management System</h4>
+                            <p>Turns XML hackathon records into validated, persistent, queryable reports.</p>
+                            <p>I separated presentation, business, and data layers, rejected invalid records, and implemented 15 LINQ queries with JSON exports.</p>
+                            <div class="project-tags" aria-label="Technologies"><span>C#</span><span>.NET 9</span><span>EF Core</span><span>LINQ</span></div>
+                            <a class="evidence-link" href="https://github.com/Rekh-225/HackathonResultsManagementSystem" target="_blank" rel="noopener noreferrer" aria-label="View the Hackathon Results Management System on GitHub in a new tab">View on GitHub <span aria-hidden="true">↗</span></a>
+                        </article>
+                        <article class="compact-project" data-project-card data-group="more" data-categories="ai-data">
+                            <div class="project-card-meta"><span class="project-number">10</span><span>AI and Data</span></div>
+                            <h4>AI Salary Prediction Dashboard</h4>
+                            <p>Examines cybersecurity salary patterns and makes a limited prediction model easier to interpret.</p>
+                            <p>I completed the exploratory analysis, built a Random Forest regressor, and used SHAP and Dash to show feature effects while documenting the model's modest R² of 0.3224.</p>
+                            <div class="project-tags" aria-label="Technologies"><span>Python</span><span>Random Forest</span><span>SHAP</span><span>Dash</span></div>
+                            <a class="evidence-link" href="https://github.com/Rekh-225/ISSP25-Project" target="_blank" rel="noopener noreferrer" aria-label="View the AI Salary Prediction Dashboard on GitHub in a new tab">View on GitHub <span aria-hidden="true">↗</span></a>
                         </article>
                     </div>
-                    <div class="more-projects reveal">
-                        <div class="more-projects-heading"><span class="section-label">More projects</span><p>Security-aware research and private evidence.</p></div>
-                        <div class="more-projects-list">
-                            <article class="more-project-card private-project"><div><h4>Campus Copilot</h4><p>Private university-assistant research design with PII scanning, prompt-injection blocking, pseudonymised logs, RBAC filtering, and human escalation. Add a redacted safeguards diagram before featuring it.</p></div><span class="project-link-private">Private research materials</span></article>
-                            <article class="more-project-card private-project"><div><h4>AlertNAS</h4><p>Private early-warning hackathon documentation with a future productionisation path covering authentication, monitoring, resilience, data contracts, and auditability.</p></div><span class="project-link-private">No public repository</span></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="experience" aria-labelledby="experience-title">
+            <div class="container">
+                <header class="section-header section-header-wide">
+                    <p class="section-label">03 / Experience and leadership</p>
+                    <h2 class="section-title" id="experience-title">Building systems, communities, and student support.</h2>
+                </header>
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <time datetime="2025-11">November 2025 – Present</time>
+                        <div class="timeline-content">
+                            <h3>Founder &amp; Lead Organiser, Pages &amp; People</h3>
+                            <p class="timeline-subtitle">English-language reading and discussion community</p>
+                            <p>Founded Pages &amp; People after noticing that students, especially international students, had few opportunities to connect outside class.</p>
+                            <p>Formed a small team and currently lead monthly English-language book discussions and topic-based conversation events, managing outreach, registration, logistics, participant communication, and feedback.</p>
+                            <ul class="experience-metrics" aria-label="Pages and People results">
+                                <li><strong>30+</strong><span>active members</span></li><li><strong>16</strong><span>participants at the first event</span></li><li><strong>4.9/5</strong><span>satisfaction</span></li><li><strong>100%</strong><span>return intent</span></li><li><strong>Best Student Project</strong><span>recognition</span></li><li><strong>Featured</strong><span>in the incoming-student brochure</span></li>
+                            </ul>
                         </div>
+                    </article>
+                    <article class="timeline-item">
+                        <time datetime="2025-07">July 2025 – Present</time>
+                        <div class="timeline-content">
+                            <h3>Student Mentor, Stipendium Hungaricum Programme</h3>
+                            <p class="timeline-subtitle">Óbuda University / HÖOK</p>
+                            <p>Support 20+ international students with onboarding, cultural adaptation, academic systems, and university resources through regular individual and community support.</p>
+                            <p>Co-organise weekly activities and monthly events, managing promotion, registration, logistics, participant communication, feedback, and follow-up with university and HÖOK stakeholders.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <time datetime="2026">2026 – Present</time>
+                        <div class="timeline-content">
+                            <h3>Erasmus Student Network Mentor</h3>
+                            <p>Help international exchange students settle into university life, navigate the campus, and connect with the wider student community through guidance, communication, and student activities.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <time datetime="2026-02">February 2026 – May 2026</time>
+                        <div class="timeline-content">
+                            <h3>Research Contributor, Óbuda University AI Squad</h3>
+                            <p>Completed a semester-long research programme and co-designed Campus Copilot, a university assistant intended to return cited answers from institutional information.</p>
+                            <p>Co-authored a 21-page research report and presented the architecture, trade-offs, risks, and evaluation approach to a faculty jury.</p>
+                            <p>The project reached the final stage.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="skills" aria-labelledby="skills-title">
+            <div class="container">
+                <header class="section-header">
+                    <p class="section-label">04 / Skills</p>
+                    <h2 class="section-title" id="skills-title">Tools I use to build, test, and communicate.</h2>
+                </header>
+                <div class="skills-grid">
+                    <article class="skill-category"><span class="skill-number">01</span><h3>AI and Data</h3><div class="skill-tags"><span>Claude</span><span>Claude Code</span><span>ChatGPT</span><span>OpenAI API</span><span>Gemini API</span><span>Large language models</span><span>RAG</span><span>Semantic retrieval</span><span>Prompt engineering</span><span>Agentic AI</span><span>scikit-learn</span><span>SHAP</span><span>Qdrant</span></div></article>
+                    <article class="skill-category"><span class="skill-number">02</span><h3>Software Development</h3><div class="skill-tags"><span>Python</span><span>C#</span><span>TypeScript</span><span>JavaScript</span><span>SQL</span><span>FastAPI</span><span>Flask</span><span>ASP.NET Core</span><span>React</span><span>Next.js</span><span>Supabase</span><span>PostgreSQL</span></div></article>
+                    <article class="skill-category"><span class="skill-number">03</span><h3>Cloud, Security, and Systems</h3><div class="skill-tags"><span>Azure</span><span>Docker Compose</span><span>Linux</span><span>Nginx</span><span>SSH</span><span>TLS</span><span>Networking</span><span>Access control</span><span>Common Criteria</span><span>IEC 62443</span></div></article>
+                    <article class="skill-category"><span class="skill-number">04</span><h3>Tools and Ways of Working</h3><div class="skill-tags"><span>Git and GitHub</span><span>Jupyter</span><span>LaTeX</span><span>VS Code</span><span>Make.com</span><span>System design</span><span>Testing</span><span>Technical documentation</span><span>Research synthesis</span><span>Project coordination</span><span>Stakeholder communication</span></div></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="education" aria-labelledby="education-title">
+            <div class="container">
+                <header class="section-header section-header-wide">
+                    <p class="section-label">05 / Education and selected learning</p>
+                    <h2 class="section-title" id="education-title">Academic foundations and applied programmes.</h2>
+                </header>
+                <div class="learning-block">
+                    <h3 class="subsection-title">Education</h3>
+                    <article class="education-card">
+                        <div><p class="record-label">Óbuda University</p><h4>BSc in Computer Science Engineering</h4><p>John von Neumann Faculty of Informatics</p></div>
+                        <dl class="education-facts"><div><dt>Period</dt><dd>September 2024 – February 2028, expected</dd></div><div><dt>GPA</dt><dd>4.74/5.00</dd></div><div><dt>Scholarship</dt><dd>Stipendium Hungaricum Scholar</dd></div></dl>
+                    </article>
+                </div>
+                <div class="learning-block">
+                    <h3 class="subsection-title">Selected Learning</h3>
+                    <div class="learning-grid">
+                        <article class="learning-card"><p class="record-label">Summer 2026 · Top 10 selected</p><h4>Cybersecurity &amp; Compliance Engineering Bootcamp</h4><p>Óbuda University &amp; CCLab</p><p>Applied learning in ethical hacking, secure development, networking, and security evaluation.</p></article>
+                        <article class="learning-card"><p class="record-label">6–17 July 2026 · Grade A · 4 ECTS</p><h4>DX: Digital Transformation for Business, MCP-Based RAG</h4><p>Prishtina International Summer University</p><p>Applied programme covering digital transformation, RAG, and AI-supported business systems.</p></article>
+                        <article class="learning-card"><p class="record-label">30 July – 8 August 2025 · 10/10</p><h4>Artificial Intelligence and Human-Machine Interaction</h4><p>International Summer School Prizren</p><p>Produced and presented the AI Salary Prediction Dashboard as an applied learning project.</p></article>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Legacy project cards retained temporarily for source-history comparison. -->
-    <section class="section legacy-projects" id="projects-archive" hidden aria-hidden="true">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">04 / Selected work</span>
-                <h2 class="section-title">Things I have made and investigated.</h2>
-                <div class="section-line"></div>
-            </div>
-
-            <!-- Filter Buttons -->
-            <div class="project-filters reveal">
-                <button class="filter-btn active" data-filter="featured" aria-pressed="true">Featured</button>
-                <button class="filter-btn" data-filter="all" aria-pressed="false">All work</button>
-                <button class="filter-btn" data-filter="ai" aria-pressed="false">AI & Data</button>
-                <button class="filter-btn" data-filter="backend" aria-pressed="false">Backend & Web</button>
-                <button class="filter-btn" data-filter="cloud" aria-pressed="false">Cloud & Systems</button>
-                <button class="filter-btn" data-filter="security" aria-pressed="false">Cybersecurity</button>
-                <button class="filter-btn" data-filter="leadership" aria-pressed="false">Leadership</button>
-            </div>
-
-            <div class="projects-grid">
-                <!-- 1. Fraud Detection (Featured) -->
-                <div class="project-card featured reveal" data-category="ai">
-                    <div class="project-card-header">
-                        <span class="project-category-icon">🔍</span>
-                        <span class="project-scope-label">Academic Project</span>
-                    </div>
-                    <div class="project-card-body">
-                        <h3 class="project-title">Explainable AI-Powered Fraud Detection</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">Python</span>
-                            <span class="project-tag">scikit-learn</span>
-                            <span class="project-tag">Random Forest</span>
-                            <span class="project-tag">SHAP</span>
-                        </div>
-                        <p class="project-description">An auditable rare-event fraud-detection pipeline that cleans transactions, compares classifiers, selects an operating threshold using validation data only, and evaluates the final policy on an untouched test set.</p>
-                        <div class="project-metrics">
-                            <span class="metric"><strong>95.7%</strong> Precision</span>
-                            <span class="metric"><strong>0.805</strong> F1</span>
-                            <span class="metric"><strong>0.965</strong> ROC-AUC</span>
-                        </div>
-                    </div>
-                    <div class="project-card-footer">
-                        <a href="https://github.com/Rekh-225/Explainable-Fraud-Detection-PISU-2026" target="_blank" rel="noopener noreferrer" class="project-link">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 2. Deep Packet Inspection (Featured) -->
-                <div class="project-card featured reveal" data-category="security">
-                    <div class="project-card-header">
-                        <span class="project-category-icon">🛡️</span>
-                        <span class="project-scope-label">Academic Project</span>
-                    </div>
-                    <div class="project-card-body">
-                        <h3 class="project-title">Deep Packet Inspection System</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">Python</span>
-                            <span class="project-tag">Networking</span>
-                            <span class="project-tag">PCAP</span>
-                            <span class="project-tag">Zero-Dependency</span>
-                        </div>
-                        <p class="project-description">A zero-dependency Python tool for authorised offline PCAP analysis, protocol parsing, metadata extraction, traffic classification, filtering, and filtered-PCAP export.</p>
-                        <div class="project-metrics">
-                            <span class="metric"><strong>20+</strong> App Classifications</span>
-                            <span class="metric"><strong>90</strong> Tests Passed</span>
-                            <span class="metric"><strong>100%</strong> Pass Rate</span>
-                        </div>
-                    </div>
-                    <div class="project-card-footer">
-                        <a href="https://github.com/Rekh-225/Deep-Packet-Inspection-System" target="_blank" rel="noopener noreferrer" class="project-link">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 3. DevLab (Featured) -->
-                <div class="project-card featured reveal" data-category="cloud">
-                    <div class="project-card-header">
-                        <span class="project-category-icon">☁️</span>
-                        <span class="project-scope-label">Academic Infrastructure Project</span>
-                    </div>
-                    <div class="project-card-body">
-                        <h3 class="project-title">DevLab — Self-Hosted Dev Environment</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">Azure</span>
-                            <span class="project-tag">Ubuntu</span>
-                            <span class="project-tag">Nginx</span>
-                            <span class="project-tag">Bash</span>
-                        </div>
-                        <p class="project-description">A production-style development environment hosted on an Azure Ubuntu VM with Git hosting, web services, monitoring, DNS, security controls, and automated backups.</p>
-                        <div class="project-metrics">
-                            <span class="metric"><strong>Dual-Layer</strong> Network Controls</span>
-                            <span class="metric"><strong>SSH</strong> Key-Only Access</span>
-                        </div>
-                    </div>
-                    <div class="project-card-footer">
-                        <a href="https://github.com/Rekh-225/devlab-development-environment" target="_blank" rel="noopener noreferrer" class="project-link">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 4. SkinSync (Featured) -->
-                <div class="project-card featured reveal" data-category="backend">
-                    <div class="project-card-header">
-                        <span class="project-category-icon">💡</span>
-                        <span class="project-scope-label">Full-Stack App</span>
-                    </div>
-                    <div class="project-card-body">
-                        <h3 class="project-title">SkinSync — AI Skincare Assistant</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">React</span>
-                            <span class="project-tag">TypeScript</span>
-                            <span class="project-tag">Supabase</span>
-                            <span class="project-tag">OpenRouter</span>
-                        </div>
-                        <p class="project-description">A full-stack AI web application that provides educational, personalised skincare routines, chatbot guidance, and ingredient analysis through a quiz-driven experience.</p>
-                        <div class="project-metrics">
-                            <span class="metric"><strong>Auth</strong> User Flows</span>
-                            <span class="metric"><strong>Serverless</strong> AI</span>
-                        </div>
-                    </div>
-                    <div class="project-card-footer">
-                        <a href="https://github.com/Rekh-225/skinsync-ai-glow" target="_blank" rel="noopener noreferrer" class="project-link">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 5. Campus Copilot -->
-                <div class="project-card reveal" data-category="ai">
-                    <div class="project-card-header">
-                        <span class="project-category-icon">🤖</span>
-                        <span class="project-scope-label">Research Design</span>
-                    </div>
-                    <div class="project-card-body">
-                        <h3 class="project-title">Campus Copilot — RAG Knowledge Assistant</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">FastAPI</span>
-                            <span class="project-tag">Qdrant</span>
-                            <span class="project-tag">BM25</span>
-                            <span class="project-tag">Docker Compose</span>
-                        </div>
-                        <p class="project-description">A GDPR-aware university assistant designed to retrieve cited answers from institutional documents using hybrid semantic and lexical search.</p>
-                        <div class="project-metrics">
-                            <span class="metric"><strong>21-Page</strong> Research Report</span>
-                        </div>
-                    </div>
-                    <div class="project-card-footer">
-                        <span class="project-link-private">Private Research</span>
-                    </div>
-                </div>
-
-                <!-- 6. Naibour -->
-                <div class="project-card reveal" data-category="backend">
-                    <div class="project-card-header">
-                        <span class="project-category-icon">🔄</span>
-                        <span class="project-scope-label">Full-Stack App</span>
-                    </div>
-                    <div class="project-card-body">
-                        <h3 class="project-title">Naibour — Community Exchange Network</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">Next.js</span>
-                            <span class="project-tag">Gemini AI</span>
-                            <span class="project-tag">Prisma</span>
-                            <span class="project-tag">File-Backed Storage</span>
-                        </div>
-                        <p class="project-description">A community marketplace using AI-assisted semantic matching and graph search to find direct exchanges and multi-party barter opportunities.</p>
-                        <div class="project-metrics">
-                            <span class="metric"><strong>5-Part</strong> Compatibility Score</span>
-                        </div>
-                    </div>
-                    <div class="project-card-footer">
-                        <a href="https://github.com/Rekh-225/naibour" target="_blank" rel="noopener noreferrer" class="project-link">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 7. UserHub -->
-                <div class="project-card reveal" data-category="backend">
-                    <div class="project-card-header">
-                        <span class="project-category-icon">👤</span>
-                        <span class="project-scope-label">Full-Stack App</span>
-                    </div>
-                    <div class="project-card-body">
-                        <h3 class="project-title">UserHub — User Management System</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">ASP.NET Core</span>
-                            <span class="project-tag">.NET 9</span>
-                            <span class="project-tag">EF Core</span>
-                            <span class="project-tag">SQLite</span>
-                        </div>
-                        <p class="project-description">A full-stack CRUD application with a custom responsive SPA frontend and an ASP.NET Core API with validation and real-time search.</p>
-                        <div class="project-metrics">
-                            <span class="metric"><strong>5</strong> CRUD Endpoints</span>
-                        </div>
-                    </div>
-                    <div class="project-card-footer">
-                        <a href="https://github.com/Rekh-225/UserHub" target="_blank" rel="noopener noreferrer" class="project-link">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 8. AlertNAS -->
-                <div class="project-card reveal" data-category="cloud">
-                    <div class="project-card-header">
-                        <span class="project-category-icon">🌍</span>
-                        <span class="project-scope-label">Hackathon — 3rd Place</span>
-                    </div>
-                    <div class="project-card-body">
-                        <h3 class="project-title">AlertNAS — Cloud-Native Early Warning System</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">FastAPI</span>
-                            <span class="project-tag">React</span>
-                            <span class="project-tag">Leaflet</span>
-                            <span class="project-tag">Docker Compose</span>
-                        </div>
-                        <p class="project-description">A hackathon platform combining public climate, seismic, demographic, and infrastructure data to generate AI-assisted risk alerts for European communities.</p>
-                        <div class="project-metrics">
-                            <span class="metric"><strong>6</strong> Data Source Categories</span>
-                            <span class="metric"><strong>3rd</strong> Place — Aruba Cloud</span>
-                        </div>
-                    </div>
-                    <div class="project-card-footer">
-                        <span class="project-link-private">No Public Repo</span>
-                    </div>
-                </div>
-
-                <!-- 9. bitWiser -->
-                <div class="project-card reveal" data-category="backend">
-                    <div class="project-card-header">
-                        <span class="project-category-icon">🔥</span>
-                        <span class="project-scope-label">Simulation</span>
-                    </div>
-                    <div class="project-card-body">
-                        <h3 class="project-title">bitWiser — Multi-Agent Firefighting Bot</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">C#</span>
-                            <span class="project-tag">.NET</span>
-                            <span class="project-tag">gRPC</span>
-                            <span class="project-tag">A* Pathfinding</span>
-                        </div>
-                        <p class="project-description">A C# simulation bot that coordinates drones, fire trucks, and firefighters in a live grid-based firefighting environment with A* pathfinding.</p>
-                        <div class="project-metrics">
-                            <span class="metric"><strong>3</strong> Agent Roles</span>
-                            <span class="metric"><strong>Live</strong> Dashboard</span>
-                        </div>
-                    </div>
-                    <div class="project-card-footer">
-                        <a href="https://github.com/Rekh-225/bitWiser" target="_blank" rel="noopener noreferrer" class="project-link">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 10. Hackathon Results -->
-                <div class="project-card reveal" data-category="backend">
-                    <div class="project-card-header">
-                        <span class="project-category-icon">📊</span>
-                        <span class="project-scope-label">Academic Project</span>
-                    </div>
-                    <div class="project-card-body">
-                        <h3 class="project-title">Hackathon Results Management System</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">C#</span>
-                            <span class="project-tag">.NET 9</span>
-                            <span class="project-tag">EF Core</span>
-                            <span class="project-tag">LINQ</span>
-                        </div>
-                        <p class="project-description">A data-management application for importing, validating, querying, and reporting hackathon results with layered architecture.</p>
-                        <div class="project-metrics">
-                            <span class="metric"><strong>15</strong> LINQ Queries</span>
-                        </div>
-                    </div>
-                    <div class="project-card-footer">
-                        <a href="https://github.com/Rekh-225/HackathonResultsManagementSystem" target="_blank" rel="noopener noreferrer" class="project-link">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 11. ISSP25 Salary Dashboard -->
-                <div class="project-card reveal" data-category="ai">
-                    <div class="project-card-header">
-                        <span class="project-category-icon">📈</span>
-                        <span class="project-scope-label">Academic Project</span>
-                    </div>
-                    <div class="project-card-body">
-                        <h3 class="project-title">ISSP25 — AI Salary Prediction Dashboard</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">Python</span>
-                            <span class="project-tag">Random Forest</span>
-                            <span class="project-tag">SHAP</span>
-                            <span class="project-tag">Dash</span>
-                        </div>
-                        <p class="project-description">A machine-learning dashboard that estimates cybersecurity salaries and makes model behaviour easier to explore through SHAP explanations.</p>
-                        <div class="project-metrics">
-                            <span class="metric"><strong>Interactive</strong> Dashboard</span>
-                        </div>
-                    </div>
-                    <div class="project-card-footer">
-                        <a href="https://github.com/Rekh-225/ISSP25-Project" target="_blank" rel="noopener noreferrer" class="project-link">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 12. Comparative Analysis -->
-                <div class="project-card reveal" data-category="leadership">
-                    <div class="project-card-header">
-                        <span class="project-category-icon">🔬</span>
-                        <span class="project-scope-label">Research</span>
-                    </div>
-                    <div class="project-card-body">
-                        <h3 class="project-title">Comparative AI Predictive Analytics</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">Research</span>
-                            <span class="project-tag">Predictive Analytics</span>
-                            <span class="project-tag">PowerPoint</span>
-                        </div>
-                        <p class="project-description">A group research project comparing predictive-analytics use cases and business value across healthcare, retail, and manufacturing.</p>
-                        <div class="project-metrics">
-                            <span class="metric"><strong>16-Slide</strong> Analysis</span>
-                            <span class="metric"><strong>3</strong> Industries</span>
-                        </div>
-                    </div>
-                    <div class="project-card-footer">
-                        <span class="project-link-private">Private Presentation</span>
-                    </div>
-                </div>
-
-                <!-- 13. Pages & People -->
-                <div class="project-card reveal" data-category="leadership">
-                    <div class="project-card-header">
-                        <span class="project-category-icon">📚</span>
-                        <span class="project-scope-label">Community Project</span>
-                    </div>
-                    <div class="project-card-body">
-                        <h3 class="project-title">Pages & People — Reading Community</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">Event Planning</span>
-                            <span class="project-tag">SWOT</span>
-                            <span class="project-tag">KPI Analysis</span>
-                        </div>
-                        <p class="project-description">An English-language student reading community built through structured event planning, stakeholder communication, and evaluation.</p>
-                        <div class="project-metrics">
-                            <span class="metric"><strong>4.9/5</strong> Satisfaction</span>
-                            <span class="metric"><strong>30+</strong> Members</span>
-                            <span class="metric"><strong>Best</strong> Student Project</span>
-                        </div>
-                    </div>
-                    <div class="project-card-footer">
-                        <span class="project-link-private">Private Documentation</span>
-                    </div>
+        <section class="section recognition-section" id="recognition" aria-labelledby="recognition-title">
+            <div class="container">
+                <header class="section-header"><p class="section-label">06 / Recognition</p><h2 class="section-title" id="recognition-title">Selected milestones.</h2></header>
+                <div class="recognition-grid">
+                    <article><span>2025</span><h3>Third Place, Aruba Cloud Hackathon</h3><p>Team recognition for AlertNAS.</p></article>
+                    <article><span>May 2026</span><h3>Best Student Project, Pages &amp; People</h3><p>Community project recognition from Óbuda University.</p></article>
+                    <article><span>2024–2028</span><h3>Stipendium Hungaricum Scholarship</h3><p>Hungarian Government scholarship for BSc studies.</p></article>
+                    <article><span>Academic achievement</span><h3>Bronze Medal, State Examination</h3><p>Third position in the Pre-Engineering group.</p></article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ===================== EDUCATION SECTION ===================== -->
-    <section class="section section-alt" id="education">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">05 / Education</span>
-                <h2 class="section-title">Academic path.</h2>
-                <div class="section-line"></div>
-            </div>
-
-            <!-- Degrees -->
-            <div class="education-grid" style="margin-bottom: 3rem;">
-                <div class="education-card reveal">
-                    <div class="education-icon">🎓</div>
-                    <div class="education-content">
-                        <h3 class="education-degree">BSc Computer Science Engineering</h3>
-                        <span class="education-school">Óbuda University — John von Neumann Faculty of Informatics</span>
-                        <span class="education-location">Budapest, Hungary</span>
-                        <div class="education-meta">
-                            <span class="education-date">Sep 2024 — Feb 2028 (Expected)</span>
-                            <span class="cert-badge">GPA: 4.74/5.0</span>
-                            <span class="cert-badge">Stipendium Hungaricum</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="education-card reveal">
-                    <div class="education-icon">📘</div>
-                    <div class="education-content">
-                        <h3 class="education-degree">FSc Pre-Engineering</h3>
-                        <span class="education-school">Read Foundation College</span>
-                        <span class="education-location">Bhimber, AJK, Pakistan</span>
-                        <div class="education-meta">
-                            <span class="education-date">Sep 2021 — Sep 2023</span>
-                            <span class="cert-badge">91.09%</span>
-                            <span class="cert-badge">Bronze Medal</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Courses, Summer Schools & Bootcamps -->
-            <h3 class="subsection-title reveal" style="color: var(--text-primary); font-size: 1.25rem; font-weight: 600; margin-bottom: 1.5rem; text-align: center;">Courses, Summer Schools &amp; Bootcamps</h3>
-            <div class="education-grid">
-                <div class="education-card reveal">
-                    <div class="education-icon">🛡️</div>
-                    <div class="education-content">
-                        <h3 class="education-degree">Cybersecurity & Compliance Engineering Bootcamp</h3>
-                        <span class="education-school">Óbuda University & CCLab</span>
-                        <div class="education-meta">
-                            <span class="education-date">Summer 2026</span>
-                            <span class="cert-badge">Top 10 Selected</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="education-card reveal">
-                    <div class="education-icon">🤖</div>
-                    <div class="education-content">
-                        <h3 class="education-degree">DX: Digital Transformation for Business, MCP-Based RAG</h3>
-                        <span class="education-school">Prishtina International Summer University (PISU)</span>
-                        <div class="education-meta">
-                            <span class="education-date">6–17 Jul 2026</span>
-                            <span class="cert-badge">Grade A (4 ECTS)</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="education-card reveal">
-                    <div class="education-icon">🧠</div>
-                    <div class="education-content">
-                        <h3 class="education-degree">Artificial Intelligence and Human-Machine Interaction</h3>
-                        <span class="education-school">International Summer School Prizren (ISSP)</span>
-                        <div class="education-meta">
-                            <span class="education-date">30 Jul – 8 Aug 2025</span>
-                            <span class="cert-badge">10/10</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="education-card reveal">
-                    <div class="education-icon">💡</div>
-                    <div class="education-content">
-                        <h3 class="education-degree">AI Training Programme</h3>
-                        <span class="education-school">Online AI Training Programme</span>
-                        <div class="education-meta">
-                            <span class="education-date">Jul 2025</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===================== CERTIFICATIONS SECTION ===================== -->
-    <section class="section" id="certifications">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">06 / Credentials</span>
-                <h2 class="section-title">Certificates &amp; credentials.</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="certs-grid">
-                <div class="cert-card reveal">
-                    <div class="cert-icon">🎓</div>
-                    <div class="cert-content">
-                        <h3 class="cert-title">AI Squad Spring ’26 Programme</h3>
-                        <span class="cert-issuer">Óbuda University</span>
-                        <div class="cert-meta">
-                            <span class="cert-date">Spring 2026</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cert-card reveal">
-                    <div class="cert-icon">✨</div>
-                    <div class="cert-content">
-                        <h3 class="cert-title">Generative AI Mastermind</h3>
-                        <span class="cert-issuer">Outskill</span>
-                        <div class="cert-meta">
-                            <span class="cert-date">Certificate of Completion</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cert-card reveal">
-                    <div class="cert-icon">📊</div>
-                    <div class="cert-content">
-                        <h3 class="cert-title">Excel for Beginners</h3>
-                        <span class="cert-issuer">DavidsonX / edX</span>
-                        <div class="cert-meta">
-                            <span class="cert-date">3 Feb 2026</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===================== AWARDS SECTION ===================== -->
-    <section class="section section-alt" id="awards">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">07 / Recognition</span>
-                <h2 class="section-title">Milestones worth noting.</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="certs-grid">
-                <div class="cert-card reveal">
-                    <div class="cert-icon">🥉</div>
-                    <div class="cert-content">
-                        <h3 class="cert-title">3rd Place — Aruba Cloud Hackathon</h3>
-                        <span class="cert-issuer">Óbuda University — Aruba Cloud Hackathon</span>
-                        <p style="color: var(--text-muted); font-size: 0.8125rem; margin-bottom: 0.75rem; line-height: 1.5; margin-top: 0.5rem;">Team Newlayer placed third for AlertNAS, a hackathon early-warning platform combining six public data-source categories for AI-assisted risk alerts.</p>
-                        <div class="cert-meta">
-                            <span class="cert-badge">3rd Place</span>
-                            <span class="cert-date">2025</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="cert-card reveal">
-                    <div class="cert-icon">🏅</div>
-                    <div class="cert-content">
-                        <h3 class="cert-title">Bronze Medal — State Examination</h3>
-                        <span class="cert-issuer">Board of Intermediate and Secondary Education, Mirpur</span>
-                        <p style="color: var(--text-muted); font-size: 0.8125rem; margin-bottom: 0.75rem; line-height: 1.5; margin-top: 0.5rem;">Awarded bronze medal for 3rd position in the Pre-Engineering group.</p>
-                        <div class="cert-meta">
-                            <span class="cert-badge">Bronze Medal</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cert-card reveal">
-                    <div class="cert-icon">🎓</div>
-                    <div class="cert-content">
-                        <h3 class="cert-title">Stipendium Hungaricum Scholarship</h3>
-                        <span class="cert-issuer">Hungarian Government</span>
-                        <p style="color: var(--text-muted); font-size: 0.8125rem; margin-bottom: 0.75rem; line-height: 1.5; margin-top: 0.5rem;">Government scholarship providing full tuition and a living stipend for BSc studies at Óbuda University.</p>
-                        <div class="cert-meta">
-                            <span class="cert-badge">Scholarship Recipient</span>
-                            <span class="cert-date">2024 — 2028</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cert-card reveal">
-                    <div class="cert-icon">🏆</div>
-                    <div class="cert-content">
-                        <h3 class="cert-title">Best Student Project — Pages & People</h3>
-                        <span class="cert-issuer">Óbuda University</span>
-                        <p style="color: var(--text-muted); font-size: 0.8125rem; margin-bottom: 0.75rem; line-height: 1.5; margin-top: 0.5rem;">Co-organised a reading community that received Best Student Project recognition and a feature in the incoming freshman brochure.</p>
-                        <div class="cert-meta">
-                            <span class="cert-badge">Best Project</span>
-                            <span class="cert-date">May 2026</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===================== CONTACT SECTION ===================== -->
-    <section class="section section-alt" id="contact">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">08 / Contact</span>
-                <h2 class="section-title">Start a conversation.</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="contact-wrapper reveal">
+        <section class="section section-alt" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <header class="section-header section-header-wide contact-header">
+                    <p class="section-label">07 / Contact</p>
+                    <h2 class="section-title" id="contact-title">Let’s build something useful.</h2>
+                    <p>I am open to internships, research collaborations, student initiatives, and practical AI or software projects.</p>
+                </header>
                 <div class="contact-grid">
-                    <a href="mailto:rehankhaliq028@gmail.com" class="contact-card" id="contact-email">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                        </div>
-                        <span class="contact-label">Email</span>
-                        <span class="contact-value">rehankhaliq028@gmail.com</span>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/khaliq-rehan" target="_blank" rel="noopener noreferrer" class="contact-card" id="contact-linkedin">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                        </div>
-                        <span class="contact-label">LinkedIn</span>
-                        <span class="contact-value">khaliq-rehan</span>
-                    </a>
-
-                    <a href="https://github.com/Rekh-225" target="_blank" rel="noopener noreferrer" class="contact-card" id="contact-github">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                        </div>
-                        <span class="contact-label">GitHub</span>
-                        <span class="contact-value">Rekh-225</span>
-                    </a>
-
-                    <div class="contact-card" id="contact-location">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                        </div>
-                        <span class="contact-label">Location</span>
-                        <span class="contact-value">Budapest, Hungary</span>
-                    </div>
-                </div>
-
-                <div class="contact-cta reveal">
-                    <div class="cta-card">
-                        <h3 class="cta-title">Interested in working together?</h3>
-                        <p class="cta-text">I'm always open to discussing new projects, research opportunities, and ways to collaborate.</p>
-                        <div class="cta-buttons">
-                            <a href="mailto:rehankhaliq028@gmail.com" class="btn btn-primary">Send an Email</a>
-                            <a href="#projects" class="btn btn-secondary">View Projects</a>
-                        </div>
-                    </div>
+                    <a class="contact-card" href="mailto:rehankhaliq028@gmail.com" target="_blank" rel="noopener noreferrer"><span class="contact-label">Email</span><strong>rehankhaliq028@gmail.com</strong><span aria-hidden="true">↗</span></a>
+                    <a class="contact-card" href="https://www.linkedin.com/in/khaliq-rehan" target="_blank" rel="noopener noreferrer"><span class="contact-label">LinkedIn</span><strong>khaliq-rehan</strong><span aria-hidden="true">↗</span></a>
+                    <a class="contact-card" href="https://github.com/Rekh-225" target="_blank" rel="noopener noreferrer"><span class="contact-label">GitHub</span><strong>Rekh-225</strong><span aria-hidden="true">↗</span></a>
+                    <div class="contact-card contact-location"><span class="contact-label">Location</span><strong>Budapest, Hungary</strong><span aria-hidden="true">⌖</span></div>
                 </div>
             </div>
-        </div>
-    </section>
-
+        </section>
     </main>
 
-    <!-- ===================== FOOTER ===================== -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <a href="#hero" class="footer-logo">RK<span class="gradient-text">/</span></a>
-                <p class="footer-tagline">Applied work across AI, backend engineering, cloud infrastructure and security.</p>
-                <div class="footer-social">
-                    <a href="https://github.com/Rekh-225" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/khaliq-rehan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                    </a>
-                    <a href="mailto:rehankhaliq028@gmail.com" aria-label="Email" class="social-link">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                    </a>
-                </div>
-                <div class="footer-divider"></div>
-                <p class="footer-copyright">© <span id="currentYear">2026</span> Rehan Khaliq. Built with care in Budapest.</p>
-            </div>
+        <div class="container footer-content">
+            <a href="#hero" class="footer-logo" aria-label="Rehan Khaliq — back to top">RK<span>/</span></a>
+            <p>Building, testing, learning, and sharing the work.</p>
+            <div class="footer-links" aria-label="Footer links"><a href="https://github.com/Rekh-225" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/khaliq-rehan" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="mailto:rehankhaliq028@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></div>
+            <p class="footer-copyright">© <span id="currentYear">2026</span> Rehan Khaliq. Built with care in Budapest.</p>
         </div>
     </footer>
-
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
-    </button>
-
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top" aria-hidden="true" tabindex="-1"><span aria-hidden="true">↑</span></button>
+    <script src="script.js?v=20260907-1"></script>
 </body>
 </html>
